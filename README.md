@@ -4,6 +4,11 @@
 
 <p align='center'><em>Think about TailwindCSS + PurgeCSS, but for Icons.</em></p>
 
+<p align='center'>
+<img src='https://user-images.githubusercontent.com/11247099/89781398-ce625a80-db45-11ea-86bf-d50471c526b7.gif' alt='GIF Demo'/>
+</p>
+
+
 ## Intro
 
 **PurgeIcons** is heavily inspired from [PurgeCSS](https://purgecss.com/). It analyzes your source code or dist files, extracting the icon names you used, and then bundle the icons' data (SVGs) into your code.
