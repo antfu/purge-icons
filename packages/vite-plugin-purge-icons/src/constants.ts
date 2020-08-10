@@ -1,1 +1,1 @@
-export const IMPORT_PATH = '/@purge-icons/icons'
+export const IMPORT_PATH = '@purge-icons/generated'

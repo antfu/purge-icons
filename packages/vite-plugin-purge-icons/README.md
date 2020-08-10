@@ -29,7 +29,7 @@ Import the `/@purge-icons/icons` in your `main.js`
 import { createApp } from 'vue'
 import App from './App.vue'
 
-import '/@purge-icons/icons' // <-- This
+import '@purge-icons/generated' // <-- This
 
 createApp(App).mount('#app')
 ```

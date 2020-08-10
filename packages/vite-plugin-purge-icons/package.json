@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-purge-icons",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -21,6 +21,7 @@
     "dist"
   ],
   "dependencies": {
+    "@purge-icons/generated": "workspace:*",
     "purge-icons": "workspace:*"
   },
   "devDependencies": {

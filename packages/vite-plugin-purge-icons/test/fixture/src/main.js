@@ -2,6 +2,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@iconify/iconify'
-import '/@purge-icons/icons'
+import '@purge-icons/generated'
 
 createApp(App).mount('#app')
