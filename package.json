@@ -1,0 +1,16 @@
+{
+  "name": "purge-icons",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "fast-glob": "^3.2.4",
+    "fs-extra": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.1",
+    "esno": "^0.2.0",
+    "tsup": "^3.4.2",
+    "typescript": "^3.9.7"
+  }
+}
