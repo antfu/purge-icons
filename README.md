@@ -1,6 +1,6 @@
-<h1 align='center'>Purge Icons</h1>
+<h1 align='center'><samp>PurgeIcons</samp></h1>
 
-<p align='center'>Bundle icons that you use, only.</p>
+<p align='center'>Bundles only the icons that you use</p>
 
 <p align='center'><em>Think about TailwindCSS + PurgeCSS, but for Icons.</em></p>
 
@@ -47,15 +47,22 @@ npm i -D purge-icons
 ```ts
 import { PurgeIconsOptions, PurgeIcons } from 'purge-icons'
 
-await PurgeIcons({
+const code = await PurgeIcons({
+  // globs for searching source file to analyze
   content: [
-    "**/*.html",
-    "**/*.ts",
+    '**/*.html',
+    '**/*.js',
+    '**/*.vue', // scan for .vue file as well
   ],
+  // whitelist for icons that might be used dynamically
   included: [
-
+    'mdi:account-circle-outline', // from Material Design Icons
+    'fa:camera', // from Font Awesome 4
   ]
 })
+
+// code is generated with inlined icons's data, bundle the file and it's done.
+fs.promises.writeFiles('./icons.mjs', code, 'utf-8')
 ```
 
 ### Options 
@@ -63,7 +70,7 @@ await PurgeIcons({
 ```ts
 export interface PurgeIconsOptions {
   content?: (string | RawContent)[]
-  whitelist?: string[]
+  included?: string[]
   extractors?: Extractor[]
   iconSource?: IconSource // default to 'auto'
 }
