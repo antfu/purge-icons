@@ -23,7 +23,7 @@ export default {
 }
 ```
 
-Import the `/@purge-icons/icons` in your `main.js`
+Import the `@purge-icons/generated` in your `main.js`
 
 ```ts
 import { createApp } from 'vue'
@@ -37,6 +37,10 @@ createApp(App).mount('#app')
 ## Configuration
 
 Check out in [PurgeIcons](https://github.com/antfu/purge-icons#README)
+
+## Example
+
+See the [Vitesse](https://github.com/antfu/vitesse) starter template.
 
 ## License
 
