@@ -39,12 +39,9 @@ Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](htt
 
 Iconify archive that by building up a API service that only send you the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
 
-However, the down side of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and its accessability from your users.
+However, the down side of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and its accessability from your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). But with them, you would need to manually import every icons you use. Which make you lost the simple syntax in API based solutions.
 
-For this, Iconify does provide some [offline solutions by implementing frameworks components](https://docs.iconify.design/implementations/#components). But with them, you would need to manually import every icons you use. Which make you lost the simple syntax in API based solutions.
-
-So, PurgeIcons was born. By scaning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
-
+Thus, PurgeIcons was born. By scaning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
 
 ## Frameworks Plugins
 
