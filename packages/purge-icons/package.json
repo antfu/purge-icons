@@ -1,6 +1,6 @@
 {
   "name": "purge-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -31,10 +31,10 @@
     "debug": "^4.1.1",
     "fast-glob": "^3.2.4",
     "fs-extra": "^9.0.1",
-    "yargs": "^15.4.1"
+    "yargs": "^15.4.1",
+    "@iconify/iconify": "2.0.0-beta.5"
   },
   "devDependencies": {
-    "@iconify/iconify": "2.0.0-beta.5",
     "@iconify/json": "^1.1.204",
     "@iconify/types": "^1.0.3",
     "@types/debug": "^4.1.5",

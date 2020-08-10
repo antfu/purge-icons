@@ -15,13 +15,13 @@ importers:
       '@iconify/iconify': '>=2.0.0-alpha.0'
   packages/purge-icons:
     dependencies:
+      '@iconify/iconify': 2.0.0-beta.5
       axios: 0.19.2
       debug: 4.1.1
       fast-glob: 3.2.4
       fs-extra: 9.0.1
       yargs: 15.4.1
     devDependencies:
-      '@iconify/iconify': 2.0.0-beta.5
       '@iconify/json': 1.1.204
       '@iconify/types': 1.0.3
       '@types/debug': 4.1.5
@@ -204,6 +204,7 @@ packages:
     resolution:
       integrity: sha512-qCbH1V/Ceg302lrgBiiXCZAyqMAq8KqsHYokCpUvgBH6yYfAmvlSkEEBrmJdHofQvfY/+xaeQcsOOTjW7JakNw==
   /@iconify/iconify/2.0.0-beta.5:
+    dev: false
     resolution:
       integrity: sha512-+cycuWyodI5ND/YNXn9zr3lbRife8Q/wnaAWMavQQNJqxKMOPRzSlUyXMOyIT6SQRmpq2Z2oOIq5EKoV8lplDQ==
   /@iconify/json/1.1.204:

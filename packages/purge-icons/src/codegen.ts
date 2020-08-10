@@ -107,10 +107,10 @@ export async function GetIconsData(icons: string[], options: PurgeIconsOptions =
 export async function CodeGen(icons: string[], options: PurgeIconsOptions = {}) {
   const data = await GetIconsData(icons, options)
 
-  const iconifyImport = options.iconifyImport || 'import Iconify from \'@iconify/iconify\''
+  // since Iconify does not ship with esm build yet. It required to use `.default` to get the instance.
+  const iconifyImport = options.iconifyImport || 'import Module from \'@iconify/iconify\'\nconst Iconify = Module.default'
 
-  return `
-${iconifyImport}
+  return `${iconifyImport}
 
 const collections = JSON.parse('${JSON.stringify(data).replace(/\\/g, '\\\\').replace(/'/g, '\\\'')}')
 

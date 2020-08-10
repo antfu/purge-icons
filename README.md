@@ -1,6 +1,6 @@
 <h1 align='center'><samp>PurgeIcons</samp></h1>
 
-<p align='center'>Bundles only the icons that you use</p>
+<p align='center'>Bundles only the icons you use</p>
 
 <p align='center'><em>Think about TailwindCSS + PurgeCSS, but for Icons.</em>
 
