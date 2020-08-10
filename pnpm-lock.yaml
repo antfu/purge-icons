@@ -10,9 +10,9 @@ importers:
       eslint: ^7.6.0
   packages/@purge-icons/generated:
     dependencies:
-      '@iconify/iconify': 1.0.7
+      '@iconify/iconify': 2.0.0-beta.5
     specifiers:
-      '@iconify/iconify': '*'
+      '@iconify/iconify': '>=2.0.0-alpha.0'
   packages/purge-icons:
     dependencies:
       axios: 0.19.2
@@ -204,7 +204,6 @@ packages:
     resolution:
       integrity: sha512-qCbH1V/Ceg302lrgBiiXCZAyqMAq8KqsHYokCpUvgBH6yYfAmvlSkEEBrmJdHofQvfY/+xaeQcsOOTjW7JakNw==
   /@iconify/iconify/2.0.0-beta.5:
-    dev: true
     resolution:
       integrity: sha512-+cycuWyodI5ND/YNXn9zr3lbRife8Q/wnaAWMavQQNJqxKMOPRzSlUyXMOyIT6SQRmpq2Z2oOIq5EKoV8lplDQ==
   /@iconify/json/1.1.204:
