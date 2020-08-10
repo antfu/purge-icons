@@ -1,0 +1,12 @@
+{
+  "name": "@purge-icons/generated",
+  "version": "0.1.0",
+  "description": "Types and placeholders for generated codes",
+  "main": "index.js",
+  "module": "index.mjs",
+  "types": "index.d.js",
+  "license": "MIT",
+  "dependencies": {
+    "@iconify/iconify": "*"
+  }
+}

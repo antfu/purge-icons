@@ -8,6 +8,11 @@ importers:
       '@antfu/eslint-config-ts': ^0.2.14
       '@typescript-eslint/eslint-plugin': ^3.8.0
       eslint: ^7.6.0
+  packages/@purge-icons/generated:
+    dependencies:
+      '@iconify/iconify': 1.0.7
+    specifiers:
+      '@iconify/iconify': '*'
   packages/purge-icons:
     dependencies:
       axios: 0.19.2
@@ -50,6 +55,7 @@ importers:
       yargs: ^15.4.1
   packages/vite-plugin-purge-icons:
     dependencies:
+      '@purge-icons/generated': 'link:../@purge-icons/generated'
       purge-icons: 'link:../purge-icons'
     devDependencies:
       esno: 0.2.0
@@ -57,6 +63,7 @@ importers:
       typescript: 3.9.7
       vite: 1.0.0-rc.4
     specifiers:
+      '@purge-icons/generated': 'workspace:*'
       esno: ^0.2.0
       purge-icons: 'workspace:*'
       tsup: ^3.4.2
