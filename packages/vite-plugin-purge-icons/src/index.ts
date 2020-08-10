@@ -5,7 +5,6 @@ import { createRollupPlugin } from './build'
 
 export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
   const parsedOptions: PurgeIconsOptions = {
-    iconifyImport: 'import Module from "/@modules/@iconify/iconify.js"\n const Iconify = Module.default',
     content: [
       '**/*.html',
       '**/*.vue',
@@ -14,11 +13,18 @@ export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
     ],
     ...options,
   }
+
   return {
-    configureServer: createServerPlugin(parsedOptions),
+    configureServer: createServerPlugin({
+      ...parsedOptions,
+      iconifyImport: 'import Module from "/@modules/@iconify/iconify.js"\nconst Iconify = Module.default',
+    }),
     rollupInputOptions: {
       plugins: [
-        createRollupPlugin(parsedOptions),
+        createRollupPlugin({
+          ...parsedOptions,
+          iconifyImport: 'import Iconify from "@iconify/iconify.js"',
+        }),
       ],
     },
   }
