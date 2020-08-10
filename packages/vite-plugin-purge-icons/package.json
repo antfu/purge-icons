@@ -1,0 +1,32 @@
+{
+  "name": "vite-plugin-purge-icons",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "antfu <anthonyfu117@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antfu/purge-icons"
+  },
+  "homepage": "https://github.com/antfu/purge-icons",
+  "bugs": "https://github.com/antfu/purge-icons/issues",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "pnpx bumpp --tag --commit && npm publish"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "purge-icons": "workspace:*"
+  },
+  "devDependencies": {
+    "esno": "^0.2.0",
+    "tsup": "^3.4.2",
+    "typescript": "^3.9.7",
+    "vite": "^1.0.0-rc.4"
+  }
+}

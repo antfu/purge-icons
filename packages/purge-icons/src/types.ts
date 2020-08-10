@@ -1,4 +1,4 @@
-import type { IconifyJSON } from '@iconify/iconify'
+import type { IconifyJSON } from '@iconify/types'
 import { CollectionId } from './generated/collections'
 
 export type ExtractorResult = string[]
@@ -16,14 +16,16 @@ export interface Extractor {
 
 export interface PurgeIconsOptions {
   content?: (string | RawContent)[]
-  whitelist?: string[]
-  whitelistCollections?: CollectionId[]
+  included?: string[]
+  // TODO:
+  includedCollections?: CollectionId[]
   defaultExtractor?: Extractor
   extractors?: Extractor[]
   iconSource?: IconSource
-  apiPath?: string
+  remoteDataAPI?: string
+  iconifyImport?: string
 }
 
-export type IconSource = 'local' | 'api' | 'auto'
+export type IconSource = 'local' | 'remote' | 'auto'
 
 export type CollectionCache = Partial<Record<CollectionId, IconifyJSON>>

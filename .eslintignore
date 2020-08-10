@@ -1,3 +1,4 @@
 dist
 node_modules
 generated
+packages/vite-plugin-purge-icons/test/fixture

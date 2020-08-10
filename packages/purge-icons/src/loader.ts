@@ -1,5 +1,5 @@
 import axios from 'axios'
-import type { IconifyJSON } from '@iconify/iconify'
+import type { IconifyJSON } from '@iconify/types'
 import { CollectionId } from './generated/collections'
 import { IconSource, CollectionCache } from './types'
 import { DEFAULT_API_PATH } from './constants'
@@ -10,8 +10,8 @@ const default_cache: CollectionCache = {}
 export async function fetchCollection(
   name: CollectionId,
   source: IconSource = 'auto',
+  remoteDataAPI = DEFAULT_API_PATH,
   cache: CollectionCache = default_cache,
-  apiPath = DEFAULT_API_PATH,
 ): Promise<IconifyJSON> {
   if (cache[name])
     return cache[name]!
@@ -30,9 +30,9 @@ export async function fetchCollection(
     }
   }
 
-  if (source === 'api' || source === 'auto') {
+  if (source === 'remote' || source === 'auto') {
     try {
-      const url = `${apiPath}/${name}.json`
+      const url = `${remoteDataAPI}/${name}.json`
       debug(`loading collection "${name}" from remote ${url}`)
       const { data } = await axios.get(url)
       const collection = typeof data === 'string' ? JSON.parse(data) : data
