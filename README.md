@@ -27,9 +27,28 @@ Underneath, it's powered by [**Iconify**](https://iconify.design), which you get
 
 Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](https://iconify.design/icon-sets/).
 
+## How It Works
+
+[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from the its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has it's own id as the prefix of the a specific icon. For example:
+
+```html
+<span class="iconify" data-icon="fa:home"></span>   <!-- Font Awesome -->
+<span class="iconify" data-icon="noto:bird"></span> <!-- Note Icons -->
+<span class="iconify" data-icon="mdi:alert"></span> <!-- Material Design Icons -->
+```
+
+Iconify archive that by building up a API service that only send you the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
+
+However, the down side of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and its accessability from your users.
+
+For this, Iconify does provide some [offline solutions by implementing frameworks components](https://docs.iconify.design/implementations/#components). But with them, you would need to manually import every icons you use. Which make you lost the simple syntax in API based solutions.
+
+So, PurgeIcons was born. By scaning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
+
+
 ## Frameworks Plugins
 
-**PurgeIcons** is designed to be framework independent, but using plugin is the most recommended way to get started. We are trying to support more frameworks out-of-box. Pull requests are great welcome!
+**PurgeIcons** is designed to be framework independent, but using framework plugins is the most recommended way to get started. Check out the supported frameworks in the following list. We are trying to make more frameworks able to use PurgeIcons out-of-box. Pull requests are great welcome!
 
 ### Official
 
@@ -92,6 +111,7 @@ export interface PurgeIconsOptions {
 
 ## TODO
 
+- CLI output
 - Better caching
 - Plugins for frameworks (Vue CLI, Nuxt.js, Next.js, etc.) PR welcome!
 - Font-based icons (Javascript Free)
