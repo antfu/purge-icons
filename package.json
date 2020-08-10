@@ -1,16 +1,20 @@
 {
-  "name": "purge-icons",
-  "version": "0.0.0",
-  "main": "index.js",
+  "name": "@purge-icons/monorepo",
+  "private": true,
+  "author": "antfu <anthonyfu117@hotmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "fast-glob": "^3.2.4",
-    "fs-extra": "^9.0.1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antfu/purge-icons"
+  },
+  "homepage": "https://github.com/antfu/purge-icons",
+  "bugs": "https://github.com/antfu/purge-icons/issues",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
-    "@types/fs-extra": "^9.0.1",
-    "esno": "^0.2.0",
-    "tsup": "^3.4.2",
-    "typescript": "^3.9.7"
+    "@antfu/eslint-config-ts": "^0.2.14",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "eslint": "^7.6.0"
   }
 }
