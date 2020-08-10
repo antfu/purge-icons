@@ -23,7 +23,7 @@ export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
       plugins: [
         createRollupPlugin({
           ...parsedOptions,
-          iconifyImport: 'import Iconify from "@iconify/iconify"',
+          iconifyImport: 'import Module from "@iconify/iconify"\nconst Iconify = Module.default',
         }),
       ],
     },
