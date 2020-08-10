@@ -22,10 +22,6 @@ Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](htt
 
 - [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons)
 
-## Configuration
-
-
-
 ## Command Line Interface
 
 > The CLI is still working in progress and the design is not yet finalized.
