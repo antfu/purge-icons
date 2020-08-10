@@ -2,7 +2,15 @@
 
 <p align='center'>Bundles only the icons that you use</p>
 
-<p align='center'><em>Think about TailwindCSS + PurgeCSS, but for Icons.</em></p>
+<p align='center'><em>Think about TailwindCSS + PurgeCSS, but for Icons.</em>
+
+<br>
+<br>
+
+<a href='https://www.npmjs.com/package/purge-icons'>
+<img src='https://img.shields.io/npm/v/purge-icons?color=222&style=flat-square'>
+</a>
+</p>
 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/11247099/89781398-ce625a80-db45-11ea-86bf-d50471c526b7.gif' alt='GIF Demo'/>
