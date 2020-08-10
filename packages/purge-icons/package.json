@@ -20,7 +20,7 @@
     "prepare": "npm run build",
     "prebuild": "esno scripts/prepare.ts",
     "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
-    "release": "pnpx bumpp --tag --commit && npm publish",
+    "release": "pnpx bumpp --tag --commit && pnpm publish --no-git-checks",
     "test": "ava"
   },
   "files": [

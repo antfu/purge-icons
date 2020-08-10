@@ -10,8 +10,7 @@
   "homepage": "https://github.com/antfu/purge-icons",
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "release": "pnpm recursive release"
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.14",

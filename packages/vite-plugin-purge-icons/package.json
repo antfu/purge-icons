@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-purge-icons",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
   "scripts": {
     "prepare": "npm run build",
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "release": "pnpx bumpp --tag --commit && npm publish"
+    "release": "pnpx bumpp && pnpm publish --no-git-checks"
   },
   "files": [
     "dist"
