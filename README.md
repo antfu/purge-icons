@@ -43,13 +43,17 @@ However, the downside of API querying is that the icons won't be available on th
 
 Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
 
-## Frameworks Plugins
+## Frameworks Support
 
 **PurgeIcons** is designed to be framework independent, but using framework plugins is the most recommended way to get started. Check out the supported frameworks in the following list. We are trying to make more frameworks able to use PurgeIcons out-of-box. Pull requests are great welcome!
 
-### Official
+### Official Plugins
 
-- [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons)
+| | |
+| --- | --- |
+| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) |
+
+<br>
 
 ## Command Line Interface
 
