@@ -41,7 +41,7 @@ Iconify achieve that by building up a API service that only send the icons you n
 
 However, the downside of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and so its accessability for your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). In that way, you would need to manually import every icon you use.
 
-Thus, PurgeIcons was born. By scaning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
+Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
 
 ## Frameworks Plugins
 
