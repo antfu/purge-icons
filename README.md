@@ -29,7 +29,7 @@ Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](htt
 
 ## How It Works
 
-[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from the its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has it's own id as the prefix of the a specific icon. For example:
+[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has it's own id as the prefix of the a specific icon. For example:
 
 ```html
 <span class="iconify" data-icon="fa:home"></span>   <!-- Font Awesome -->
