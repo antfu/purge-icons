@@ -29,7 +29,7 @@ Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](htt
 
 ## How It Works
 
-[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has it's own id as the prefix of the a specific icon. For example:
+[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has a id as the prefix of for its icons. For example:
 
 ```html
 <span class="iconify" data-icon="fa:home"></span>   <!-- Font Awesome -->
@@ -37,9 +37,9 @@ Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](htt
 <span class="iconify" data-icon="mdi:alert"></span> <!-- Material Design Icons -->
 ```
 
-Iconify archive that by building up a API service that only send you the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
+Iconify achieve that by building up a API service that only send the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
 
-However, the down side of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and its accessability from your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). But with them, you would need to manually import every icons you use. Which make you lost the simple syntax in API based solutions.
+However, the downside of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and so its accessability for your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). In that way, you would need to manually import every icon you use.
 
 Thus, PurgeIcons was born. By scaning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
 
