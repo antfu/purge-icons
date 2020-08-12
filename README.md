@@ -49,9 +49,9 @@ Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https:/
 
 ### Official Plugins
 
-| | |
-| --- | --- |
-| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) |
+| Framework | Plugin | Templates |
+|:---:| --- | -- |
+| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Starter Template](https://github.com/antfu/vitesse) |
 
 <br>
 
