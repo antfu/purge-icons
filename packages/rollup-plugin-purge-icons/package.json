@@ -31,5 +31,6 @@
     "rollup": "^2.20.0",
     "tsup": "^3.4.3",
     "typescript": "^3.9.7"
-  }
+  },
+  "gitHead": "1b9fd9a024bad619d4a6777076ef1b3c0b803de9"
 }

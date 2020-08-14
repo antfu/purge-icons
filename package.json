@@ -12,7 +12,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "lerna run build",
-    "release": "lerna publish --conventional-commits"
+    "release": "lerna publish --conventional-commits --access public"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.14",

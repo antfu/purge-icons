@@ -29,5 +29,6 @@
     "tsup": "^3.4.3",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4"
-  }
+  },
+  "gitHead": "1b9fd9a024bad619d4a6777076ef1b3c0b803de9"
 }

@@ -8,5 +8,6 @@
   "license": "MIT",
   "dependencies": {
     "@iconify/iconify": ">=2.0.0-beta.6"
-  }
+  },
+  "gitHead": "1b9fd9a024bad619d4a6777076ef1b3c0b803de9"
 }
