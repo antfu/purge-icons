@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-purge-icons",
-  "version": "0.2.2",
+  "version": "0.2.10",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -20,9 +20,9 @@
     "dist"
   ],
   "dependencies": {
-    "@purge-icons/core": "*",
-    "@purge-icons/generated": "*",
-    "rollup-plugin-purge-icons": "*"
+    "@purge-icons/core": "^0.2.10",
+    "@purge-icons/generated": "^0.2.10",
+    "rollup-plugin-purge-icons": "^0.2.10"
   },
   "devDependencies": {
     "esno": "^0.2.0",
