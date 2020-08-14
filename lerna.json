@@ -3,5 +3,10 @@
     "packages/*",
     "packages/@purge-icons/*"
   ],
+  "command": {
+    "version": {
+      "allowBranch": "main"
+    }
+  },
   "version": "0.2.10"
 }

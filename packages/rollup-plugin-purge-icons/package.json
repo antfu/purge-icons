@@ -21,7 +21,6 @@
   },
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
-    "prepare": "npm run build",
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {

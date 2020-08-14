@@ -63,7 +63,7 @@ importers:
       tsup: 3.4.3_typescript@3.9.7
       typescript: 3.9.7
     specifiers:
-      '@purge-icons/core': '*'
+      '@purge-icons/core': ^0.2.10
       esno: ^0.2.0
       rollup: ^2.25.0
       tsup: ^3.4.3
@@ -77,7 +77,7 @@ importers:
       tsup: 3.4.3_typescript@3.9.7
       typescript: 3.9.7
     specifiers:
-      '@purge-icons/core': '*'
+      '@purge-icons/core': ^0.2.10
       rollup: ^2.20.0
       tsup: ^3.4.3
       typescript: ^3.9.7
@@ -92,10 +92,10 @@ importers:
       typescript: 3.9.7
       vite: 1.0.0-rc.4
     specifiers:
-      '@purge-icons/core': '*'
-      '@purge-icons/generated': '*'
+      '@purge-icons/core': ^0.2.10
+      '@purge-icons/generated': ^0.2.10
       esno: ^0.2.0
-      rollup-plugin-purge-icons: '*'
+      rollup-plugin-purge-icons: ^0.2.10
       tsup: ^3.4.3
       typescript: ^3.9.7
       vite: ^1.0.0-rc.4

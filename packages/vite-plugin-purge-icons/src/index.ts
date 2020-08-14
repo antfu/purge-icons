@@ -21,6 +21,7 @@ export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
     }),
     rollupInputOptions: {
       plugins: [
+        // @ts-ignore
         createRollupPlugin({
           ...parsedOptions,
           iconifyImport: 'import Module from "@iconify/iconify"\nconst Iconify = Module.default',

@@ -24,7 +24,6 @@
     "purge-icons"
   ],
   "scripts": {
-    "prepare": "npm run build",
     "prebuild": "esno scripts/prepare.ts",
     "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts"
   },
