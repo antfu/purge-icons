@@ -19,17 +19,16 @@
     "type": "git",
     "url": "git+https://github.com/antfu/purge-icons.git"
   },
-  "bugs": {
-    "url": "https://github.com/antfu/purge-icons/issues"
-  },
+  "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
     "@purge-icons/core": "*"
   },
   "devDependencies": {
-    "rollup": "^2.25.0",
+    "rollup": "^2.20.0",
     "tsup": "^3.4.3",
     "typescript": "^3.9.7"
   }

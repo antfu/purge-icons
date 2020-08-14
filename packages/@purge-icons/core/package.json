@@ -12,7 +12,6 @@
   },
   "homepage": "https://github.com/antfu/purge-icons",
   "bugs": "https://github.com/antfu/purge-icons/issues",
-  
   "scripts": {
     "prepare": "npm run build",
     "prebuild": "esno scripts/prepare.ts",
@@ -23,14 +22,14 @@
     "dist"
   ],
   "dependencies": {
+    "@iconify/iconify": "2.0.0-beta.5",
     "axios": "^0.19.2",
-    "debug": "^4.1.1",
+    "debug": "^4.2.0",
     "fast-glob": "^3.2.4",
-    "fs-extra": "^9.0.1",
-    "@iconify/iconify": "2.0.0-beta.5"
+    "fs-extra": "^9.0.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.204",
+    "@iconify/json": "^1.1.205",
     "@iconify/types": "^1.0.3",
     "@types/debug": "^4.1.5",
     "@types/fs-extra": "^9.0.1",
@@ -40,7 +39,7 @@
     "esbuild-register": "^1.0.2",
     "esm": "^3.2.25",
     "esno": "^0.2.0",
-    "tsup": "^3.4.2",
+    "tsup": "^3.4.3",
     "typescript": "^3.9.7"
   },
   "ava": {

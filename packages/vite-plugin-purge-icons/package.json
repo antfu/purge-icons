@@ -20,12 +20,13 @@
     "dist"
   ],
   "dependencies": {
+    "@purge-icons/core": "*",
     "@purge-icons/generated": "*",
-    "@purge-icons/core": "*"
+    "rollup-plugin-purge-icons": "*"
   },
   "devDependencies": {
     "esno": "^0.2.0",
-    "tsup": "^3.4.2",
+    "tsup": "^3.4.3",
     "typescript": "^3.9.7",
     "vite": "^1.0.0-rc.4"
   }

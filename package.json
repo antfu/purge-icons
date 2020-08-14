@@ -11,11 +11,12 @@
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.14",
-    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.0",
     "eslint": "^7.6.0",
     "lerna": "^3.22.1"
   }

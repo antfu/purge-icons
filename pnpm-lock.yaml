@@ -2,19 +2,19 @@ importers:
   .:
     devDependencies:
       '@antfu/eslint-config-ts': 0.2.14_eslint@7.6.0
-      '@typescript-eslint/eslint-plugin': 3.8.0_eslint@7.6.0
+      '@typescript-eslint/eslint-plugin': 3.9.0_eslint@7.6.0
       eslint: 7.6.0
       lerna: 3.22.1
     specifiers:
       '@antfu/eslint-config-ts': ^0.2.14
-      '@typescript-eslint/eslint-plugin': ^3.8.0
+      '@typescript-eslint/eslint-plugin': ^3.9.0
       eslint: ^7.6.0
       lerna: ^3.22.1
   packages/@purge-icons/core:
     dependencies:
       '@iconify/iconify': 2.0.0-beta.5
       axios: 0.19.2
-      debug: 4.1.1
+      debug: 4.2.0
       fast-glob: 3.2.4
       fs-extra: 9.0.1
     devDependencies:
@@ -32,7 +32,7 @@ importers:
       typescript: 3.9.7
     specifiers:
       '@iconify/iconify': 2.0.0-beta.5
-      '@iconify/json': ^1.1.204
+      '@iconify/json': ^1.1.205
       '@iconify/types': ^1.0.3
       '@types/debug': ^4.1.5
       '@types/fs-extra': ^9.0.1
@@ -40,19 +40,19 @@ importers:
       ava: ^3.11.1
       axios: ^0.19.2
       cross-env: ^7.0.2
-      debug: ^4.1.1
+      debug: ^4.2.0
       esbuild-register: ^1.0.2
       esm: ^3.2.25
       esno: ^0.2.0
       fast-glob: ^3.2.4
       fs-extra: ^9.0.1
-      tsup: ^3.4.2
+      tsup: ^3.4.3
       typescript: ^3.9.7
   packages/@purge-icons/generated:
     dependencies:
-      '@iconify/iconify': 2.0.0-beta.5
+      '@iconify/iconify': 2.0.0-beta.6
     specifiers:
-      '@iconify/iconify': '>=2.0.0-alpha.0'
+      '@iconify/iconify': '>=2.0.0-beta.6'
   packages/purge-icons:
     dependencies:
       '@purge-icons/core': 'link:../@purge-icons/core'
@@ -78,23 +78,25 @@ importers:
       typescript: 3.9.7
     specifiers:
       '@purge-icons/core': '*'
-      rollup: ^2.25.0
+      rollup: ^2.20.0
       tsup: ^3.4.3
       typescript: ^3.9.7
   packages/vite-plugin-purge-icons:
     dependencies:
       '@purge-icons/core': 'link:../@purge-icons/core'
       '@purge-icons/generated': 'link:../@purge-icons/generated'
+      rollup-plugin-purge-icons: 'link:../rollup-plugin-purge-icons'
     devDependencies:
       esno: 0.2.0
-      tsup: 3.4.2_typescript@3.9.7
+      tsup: 3.4.3_typescript@3.9.7
       typescript: 3.9.7
       vite: 1.0.0-rc.4
     specifiers:
       '@purge-icons/core': '*'
       '@purge-icons/generated': '*'
       esno: ^0.2.0
-      tsup: ^3.4.2
+      rollup-plugin-purge-icons: '*'
+      tsup: ^3.4.3
       typescript: ^3.9.7
       vite: ^1.0.0-rc.4
   packages/vite-plugin-purge-icons/test/fixture:
@@ -107,10 +109,10 @@ importers:
       vite-plugin-purge-icons: 'link:../..'
     specifiers:
       '@iconify/iconify': ^1.0.7
-      '@vue/compiler-sfc': ^3.0.0-rc.1
-      vite: ^1.0.0-rc.1
+      '@vue/compiler-sfc': ^3.0.0-rc.5
+      vite: ^1.0.0-rc.4
       vite-plugin-purge-icons: 'workspace:*'
-      vue: ^3.0.0-rc.1
+      vue: ^3.0.0-rc.5
 lockfileVersion: 5.1
 packages:
   /@antfu/eslint-config-ts/0.2.14_eslint@7.6.0:
@@ -305,6 +307,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+cycuWyodI5ND/YNXn9zr3lbRife8Q/wnaAWMavQQNJqxKMOPRzSlUyXMOyIT6SQRmpq2Z2oOIq5EKoV8lplDQ==
+  /@iconify/iconify/2.0.0-beta.6:
+    dev: false
+    resolution:
+      integrity: sha512-4HMMKniJHQutHcWx7Z1TaHVRXnkAA0aD7D5zhbu93pKmcFOArW88HxmuJQY2hHQIEOg98zDlJu2SYNa5gMEnOQ==
   /@iconify/json/1.1.205:
     dev: true
     resolution:
@@ -1186,16 +1192,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-D/uotqF69M50OIlwMqgyIg9PuLT2daOiBAYF0P40I2ekFA2ESwwBY5dxZe/UhXdPvIbNKDzuZmQrO7rMpuFbcg==
-  /@rollup/plugin-commonjs/14.0.0_rollup@2.23.1:
+  /@rollup/plugin-commonjs/14.0.0_rollup@2.25.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.23.1
+      '@rollup/pluginutils': 3.1.0_rollup@2.25.0
       commondir: 1.0.1
       estree-walker: 1.0.1
       glob: 7.1.6
       is-reference: 1.2.1
       magic-string: 0.25.7
       resolve: 1.17.0
-      rollup: 2.23.1
+      rollup: 2.25.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1203,25 +1209,25 @@ packages:
       rollup: ^2.3.4
     resolution:
       integrity: sha512-+PSmD9ePwTAeU106i9FRdc+Zb3XUWyW26mo5Atr2mk82hor8+nPwkztEjFo8/B1fJKfaQDg9aM2bzQkjhi7zOw==
-  /@rollup/plugin-json/4.1.0_rollup@2.23.1:
+  /@rollup/plugin-json/4.1.0_rollup@2.25.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.23.1
-      rollup: 2.23.1
+      '@rollup/pluginutils': 3.1.0_rollup@2.25.0
+      rollup: 2.25.0
     dev: true
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     resolution:
       integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==
-  /@rollup/plugin-node-resolve/8.4.0_rollup@2.23.1:
+  /@rollup/plugin-node-resolve/8.4.0_rollup@2.25.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.23.1
+      '@rollup/pluginutils': 3.1.0_rollup@2.25.0
       '@types/resolve': 1.17.1
       builtin-modules: 3.1.0
       deep-freeze: 0.0.1
       deepmerge: 4.2.2
       is-module: 1.0.0
       resolve: 1.17.0
-      rollup: 2.23.1
+      rollup: 2.25.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1229,12 +1235,12 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-LFqKdRLn0ShtQyf6SBYO69bGE1upV6wUhBX0vFOUnLAyzx5cwp8svA0eHUnu8+YU57XOkrMtfG63QOpQx25pHQ==
-  /@rollup/pluginutils/3.1.0_rollup@2.23.1:
+  /@rollup/pluginutils/3.1.0_rollup@2.25.0:
     dependencies:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.2.2
-      rollup: 2.23.1
+      rollup: 2.25.0
     dev: true
     engines:
       node: '>= 8.0.0'
@@ -1448,9 +1454,9 @@ packages:
         optional: true
     resolution:
       integrity: sha512-06lfjo76naNeOMDl+mWG9Fh/a0UHKLGhin+mGaIw72FUMbMGBkdi/FEJmgEDzh4eE73KIYzHWvOCYJ0ak7nrJQ==
-  /@typescript-eslint/eslint-plugin/3.8.0_eslint@7.6.0:
+  /@typescript-eslint/eslint-plugin/3.9.0_eslint@7.6.0:
     dependencies:
-      '@typescript-eslint/experimental-utils': 3.8.0_eslint@7.6.0
+      '@typescript-eslint/experimental-utils': 3.9.0_eslint@7.6.0
       debug: 4.1.1
       eslint: 7.6.0
       functional-red-black-tree: 1.0.1
@@ -1468,7 +1474,7 @@ packages:
       typescript:
         optional: true
     resolution:
-      integrity: sha512-lFb4VCDleFSR+eo4Ew+HvrJ37ZH1Y9ZyE+qyP7EiwBpcCVxwmUc5PAqhShCQ8N8U5vqYydm74nss+a0wrrCErw==
+      integrity: sha512-UD6b4p0/hSe1xdTvRCENSx7iQ+KR6ourlZFfYuPC7FlXEzdHuLPrEmuxZ23b2zW96KJX9Z3w05GE/wNOiEzrVg==
   /@typescript-eslint/experimental-utils/3.6.1_eslint@7.6.0:
     dependencies:
       '@types/json-schema': 7.0.5
@@ -1499,6 +1505,21 @@ packages:
       eslint: '*'
     resolution:
       integrity: sha512-o8T1blo1lAJE0QDsW7nSyvZHbiDzQDjINJKyB44Z3sSL39qBy5L10ScI/XwDtaiunoyKGLiY9bzRk4YjsUZl8w==
+  /@typescript-eslint/experimental-utils/3.9.0_eslint@7.6.0:
+    dependencies:
+      '@types/json-schema': 7.0.5
+      '@typescript-eslint/types': 3.9.0
+      '@typescript-eslint/typescript-estree': 3.9.0
+      eslint: 7.6.0
+      eslint-scope: 5.1.0
+      eslint-utils: 2.1.0
+    dev: true
+    engines:
+      node: ^10.12.0 || >=12.0.0
+    peerDependencies:
+      eslint: '*'
+    resolution:
+      integrity: sha512-/vSHUDYizSOhrOJdjYxPNGfb4a3ibO8zd4nUKo/QBFOmxosT3cVUV7KIg8Dwi6TXlr667G7YPqFK9+VSZOorNA==
   /@typescript-eslint/parser/3.8.0_eslint@7.6.0:
     dependencies:
       '@types/eslint-visitor-keys': 1.0.0
@@ -1530,6 +1551,12 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
       integrity: sha512-8kROmEQkv6ss9kdQ44vCN1dTrgu4Qxrd2kXr10kz2NP5T8/7JnEfYNxCpPkArbLIhhkGLZV3aVMplH1RXQRF7Q==
+  /@typescript-eslint/types/3.9.0:
+    dev: true
+    engines:
+      node: ^8.10.0 || ^10.13.0 || >=11.10.1
+    resolution:
+      integrity: sha512-rb6LDr+dk9RVVXO/NJE8dT1pGlso3voNdEIN8ugm4CWM5w5GimbThCMiMl4da1t5u3YwPWEwOnKAULCZgBtBHg==
   /@typescript-eslint/typescript-estree/3.6.1:
     dependencies:
       '@typescript-eslint/types': 3.6.1
@@ -1570,6 +1597,26 @@ packages:
         optional: true
     resolution:
       integrity: sha512-MTv9nPDhlKfclwnplRNDL44mP2SY96YmPGxmMbMy6x12I+pERcxpIUht7DXZaj4mOKKtet53wYYXU0ABaiXrLw==
+  /@typescript-eslint/typescript-estree/3.9.0:
+    dependencies:
+      '@typescript-eslint/types': 3.9.0
+      '@typescript-eslint/visitor-keys': 3.9.0
+      debug: 4.1.1
+      glob: 7.1.6
+      is-glob: 4.0.1
+      lodash: 4.17.20
+      semver: 7.3.2
+      tsutils: 3.17.1
+    dev: true
+    engines:
+      node: ^10.12.0 || >=12.0.0
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    resolution:
+      integrity: sha512-N+158NKgN4rOmWVfvKOMoMFV5n8XxAliaKkArm/sOypzQ0bUL8MSnOEBW3VFIeffb/K5ce/cAV0yYhR7U4ALAA==
   /@typescript-eslint/visitor-keys/3.6.1:
     dependencies:
       eslint-visitor-keys: 1.3.0
@@ -1586,6 +1633,14 @@ packages:
       node: ^8.10.0 || ^10.13.0 || >=11.10.1
     resolution:
       integrity: sha512-gfqQWyVPpT9NpLREXNR820AYwgz+Kr1GuF3nf1wxpHD6hdxI62tq03ToomFnDxY0m3pUB39IF7sil7D5TQexLA==
+  /@typescript-eslint/visitor-keys/3.9.0:
+    dependencies:
+      eslint-visitor-keys: 1.3.0
+    dev: true
+    engines:
+      node: ^8.10.0 || ^10.13.0 || >=11.10.1
+    resolution:
+      integrity: sha512-O1qeoGqDbu0EZUC/MZ6F1WHTIzcBVhGqDj3LhTnj65WUA548RXVxUHbYhAW9bZWfb2rnX9QsbbP5nmeJ5Z4+ng==
   /@vue/compiler-core/3.0.0-rc.5:
     dependencies:
       '@babel/parser': 7.11.3
@@ -2988,8 +3043,22 @@ packages:
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
+    dev: true
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  /debug/4.2.0:
+    dependencies:
+      ms: 2.1.2
+    dev: false
+    engines:
+      node: '>=6.0'
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    resolution:
+      integrity: sha512-IX2ncY78vDTjZMFUdmsvIRFY2Cf4FnD0wRs+nQwJU8Lu99/tPFdb0VybiiMTPe3I6rQmwsqQqRBvxU+bZ/I8sg==
   /debuglog/1.0.1:
     dev: true
     resolution:
@@ -3381,12 +3450,6 @@ packages:
       esbuild: ^0.6.3
     resolution:
       integrity: sha512-2znPqwdKSTl70zcpOlEnuNj56KVS0nUFJQ+IX4Ogj6AyXOi98V/LZ65k+/LQ8VTiQCazBiYq97izFwGiNaP1Og==
-  /esbuild/0.6.19:
-    dev: true
-    hasBin: true
-    requiresBuild: true
-    resolution:
-      integrity: sha512-yFoX6XKDNZKPMHWf3W7L40zWC7aCm3WPWucqs7U/4YQgQYbsjx08K5j7FUQ/9pwHNhMzrSzKFR6MdD4/V+L/Pw==
   /esbuild/0.6.23:
     dev: true
     hasBin: true
@@ -7428,18 +7491,6 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==
-  /rollup-plugin-dts/1.4.10_rollup@2.23.1+typescript@3.9.7:
-    dependencies:
-      rollup: 2.23.1
-      typescript: 3.9.7
-    dev: true
-    optionalDependencies:
-      '@babel/code-frame': 7.10.4
-    peerDependencies:
-      rollup: ^2.23.0
-      typescript: ^3.9.7
-    resolution:
-      integrity: sha512-bL6MBXc8lK7D5b/tYbHaglxs4ZxMQTQilGA6Xm9KQBEj4h9ZwIDlAsvDooGjJ/cOw23r3POTRtSCEyTHxtzHJg==
   /rollup-plugin-dts/1.4.10_rollup@2.25.0+typescript@3.9.7:
     dependencies:
       rollup: 2.25.0
@@ -7452,9 +7503,9 @@ packages:
       typescript: ^3.9.7
     resolution:
       integrity: sha512-bL6MBXc8lK7D5b/tYbHaglxs4ZxMQTQilGA6Xm9KQBEj4h9ZwIDlAsvDooGjJ/cOw23r3POTRtSCEyTHxtzHJg==
-  /rollup-plugin-dynamic-import-variables/1.1.0_rollup@2.23.1:
+  /rollup-plugin-dynamic-import-variables/1.1.0_rollup@2.25.0:
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.23.1
+      '@rollup/pluginutils': 3.1.0_rollup@2.25.0
       estree-walker: 2.0.1
       globby: 11.0.1
       magic-string: 0.25.7
@@ -7463,11 +7514,11 @@ packages:
       rollup: '*'
     resolution:
       integrity: sha512-C1avEmnXC8cC4aAQ5dB63O9oQf7IrhEHc98bQw9Qd6H36FxtZooLCvVfcO4SNYrqaNrzH3ErucQt/zdFSLPHNw==
-  /rollup-plugin-terser/5.3.0_rollup@2.23.1:
+  /rollup-plugin-terser/5.3.0_rollup@2.25.0:
     dependencies:
       '@babel/code-frame': 7.10.4
       jest-worker: 24.9.0
-      rollup: 2.23.1
+      rollup: 2.25.0
       rollup-pluginutils: 2.8.2
       serialize-javascript: 2.1.2
       terser: 4.8.0
@@ -7487,9 +7538,9 @@ packages:
       '@vue/compiler-sfc': '*'
     resolution:
       integrity: sha512-8TZJmROiSRjWoHRR6id0/ktOBOUGuI302xDBq4YBiA/tnnXdoY3oFGtvRWzT5ldX0jTJ8QX40rrJOw2SvcWwxQ==
-  /rollup-plugin-web-worker-loader/1.3.1_rollup@2.23.1:
+  /rollup-plugin-web-worker-loader/1.3.1_rollup@2.25.0:
     dependencies:
-      rollup: 2.23.1
+      rollup: 2.25.0
     dev: true
     peerDependencies:
       rollup: ^1.9.2 || ^2.0.0
@@ -7501,15 +7552,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EEp9NhnUkwY8aif6bxgovPHMoMoNr2FulJziTndpt5H9RdwC47GSGuII9XxpSdzVGM0GWrNPHV6ie1LTNJPaLQ==
-  /rollup/2.23.1:
-    dev: true
-    engines:
-      node: '>=10.0.0'
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.1.3
-    resolution:
-      integrity: sha512-Heyl885+lyN/giQwxA8AYT2GY3U+gOlTqVLrMQYno8Z1X9lAOpfXPiKiZCyPc25e9BLJM3Zlh957dpTlO4pa8A==
   /rollup/2.25.0:
     dev: true
     engines:
@@ -8373,22 +8415,6 @@ packages:
       node: '>=0.6.x'
     resolution:
       integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==
-  /tsup/3.4.2_typescript@3.9.7:
-    dependencies:
-      cac: 6.6.1
-      chalk: 4.1.0
-      chokidar: 3.4.2
-      esbuild: 0.6.19
-      joycon: 2.2.5
-      rollup: 2.23.1
-      rollup-plugin-dts: 1.4.10_rollup@2.23.1+typescript@3.9.7
-      sucrase: 3.15.0
-    dev: true
-    hasBin: true
-    peerDependencies:
-      typescript: '*'
-    resolution:
-      integrity: sha512-EQ7/tIMu66I5caj5yMdO6o3bh/NTROBrHF7PXqLZqzl2IocTP3EdohkSAk9pNdxB9XOq5GgsK8BkqvlFGD6kLQ==
   /tsup/3.4.3_typescript@3.9.7:
     dependencies:
       cac: 6.6.1
@@ -8666,9 +8692,9 @@ packages:
   /vite/1.0.0-rc.4:
     dependencies:
       '@babel/parser': 7.11.3
-      '@rollup/plugin-commonjs': 14.0.0_rollup@2.23.1
-      '@rollup/plugin-json': 4.1.0_rollup@2.23.1
-      '@rollup/plugin-node-resolve': 8.4.0_rollup@2.23.1
+      '@rollup/plugin-commonjs': 14.0.0_rollup@2.25.0
+      '@rollup/plugin-json': 4.1.0_rollup@2.25.0
+      '@rollup/plugin-node-resolve': 8.4.0_rollup@2.25.0
       '@types/koa': 2.11.3
       '@types/lru-cache': 5.1.0
       '@vue/compiler-dom': 3.0.0-rc.5
@@ -8681,7 +8707,7 @@ packages:
       dotenv: 8.2.0
       dotenv-expand: 5.1.0
       es-module-lexer: 0.3.24
-      esbuild: 0.6.19
+      esbuild: 0.6.23
       etag: 1.8.1
       execa: 4.0.3
       fs-extra: 9.0.1
@@ -8705,11 +8731,11 @@ packages:
       postcss-import: 12.0.1
       postcss-load-config: 2.1.0
       resolve: 1.17.0
-      rollup: 2.23.1
-      rollup-plugin-dynamic-import-variables: 1.1.0_rollup@2.23.1
-      rollup-plugin-terser: 5.3.0_rollup@2.23.1
+      rollup: 2.25.0
+      rollup-plugin-dynamic-import-variables: 1.1.0_rollup@2.25.0
+      rollup-plugin-terser: 5.3.0_rollup@2.25.0
       rollup-plugin-vue: 6.0.0-beta.10_@vue+compiler-sfc@3.0.0-rc.5
-      rollup-plugin-web-worker-loader: 1.3.1_rollup@2.23.1
+      rollup-plugin-web-worker-loader: 1.3.1_rollup@2.25.0
       rollup-pluginutils: 2.8.2
       selfsigned: 1.10.7
       slash: 3.0.0

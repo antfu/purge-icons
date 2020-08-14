@@ -1,7 +1,7 @@
 import type { Plugin } from 'vite'
 import { PurgeIconsOptions } from '@purge-icons/core'
+import createRollupPlugin from 'rollup-plugin-purge-icons'
 import { createServerPlugin } from './server'
-import { createRollupPlugin } from './build'
 
 export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
   const parsedOptions: PurgeIconsOptions = {
