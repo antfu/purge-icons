@@ -1,6 +1,6 @@
 {
   "name": "purge-icons-loader",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Webpack loader for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,12 +24,12 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.3.0",
-    "@purge-icons/generated": "^0.3.0"
+    "@purge-icons/core": "^0.3.1",
+    "@purge-icons/generated": "^0.3.1"
   },
   "devDependencies": {
-    "@types/webpack": "^4.41.21",
     "@types/loader-utils": "^2.0.1",
+    "@types/webpack": "^4.41.21",
     "loader-utils": "^2.0.0",
     "tsup": "^3.4.3",
     "typescript": "^3.9.7"
