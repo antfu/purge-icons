@@ -7,25 +7,23 @@ export default function createPlugin(options: PurgeIconsOptions = {}): Plugin {
   const parsedOptions: PurgeIconsOptions = {
     content: [
       '**/*.html',
+      '**/*.pug',
       '**/*.vue',
       '**/*.js',
       '**/*.ts',
     ],
+    iconifyImportName: '@iconify/iconify',
     ...options,
   }
 
   return {
     configureServer: createServerPlugin({
       ...parsedOptions,
-      iconifyImport: 'import Module from "/@modules/@iconify/iconify.js"\nconst Iconify = Module.default',
+      iconifyImportName: `/@modules/${parsedOptions.iconifyImportName}`,
     }),
     rollupInputOptions: {
       plugins: [
-        // @ts-ignore
-        createRollupPlugin({
-          ...parsedOptions,
-          iconifyImport: 'import Module from "@iconify/iconify"\nconst Iconify = Module.default',
-        }),
+        createRollupPlugin(parsedOptions),
       ],
     },
   }
