@@ -116,7 +116,8 @@ const code = await PurgeIcons({
   included: [
     'mdi:account-circle-outline', // from Material Design Icons
     'fa:camera', // from Font Awesome 4
-  ]
+  ],
+  format: 'mjs'
 })
 
 // code is generated with inlined icons's data, bundle the file and it's done.
