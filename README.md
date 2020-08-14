@@ -51,6 +51,8 @@ Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https:/
 
 | Framework | Plugin | Templates |
 |:---:| --- | -- |
+| Webpack | [purge-icons-loader](./packages/purge-icons-loader) | TBD |
+| Rollup | [rollup-plugin-purge-icons](./packages/rollup-plugin-purge-icons) | TBD |
 | Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Starter Template](https://github.com/antfu/vitesse) |
 
 <br>

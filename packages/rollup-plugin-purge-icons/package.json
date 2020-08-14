@@ -1,0 +1,36 @@
+{
+  "name": "rollup-plugin-purge-icons",
+  "version": "0.0.0",
+  "description": "Rollup plugin for PurgeIcons",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "rollup-plugin",
+    "purge-icons"
+  ],
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/rollup-plugin-purge-icons#readme",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu/purge-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antfu/purge-icons/issues"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts"
+  },
+  "dependencies": {
+    "@purge-icons/core": "*"
+  },
+  "devDependencies": {
+    "rollup": "^2.25.0",
+    "tsup": "^3.4.3",
+    "typescript": "^3.9.7"
+  }
+}

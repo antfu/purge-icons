@@ -14,15 +14,14 @@
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
     "prepare": "npm run build",
-    "build": "tsup src/index.ts --format cjs,esm --dts",
-    "release": "pnpx bumpp && pnpm publish --no-git-checks"
+    "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "@purge-icons/generated": "workspace:>=0.1.0",
-    "purge-icons": "workspace:>=0.1.0"
+    "@purge-icons/generated": "*",
+    "@purge-icons/core": "*"
   },
   "devDependencies": {
     "esno": "^0.2.0",

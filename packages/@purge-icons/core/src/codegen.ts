@@ -1,7 +1,7 @@
 import path from 'path'
 import fg from 'fast-glob'
 import fs from 'fs-extra'
-import type { IconifyJSON } from '@iconify/types'
+import type { IconifyJSON } from '@iconify/iconify'
 import { debug } from './utils'
 import { ExtractorRegex, CollectionId, CollectionIds } from './generated/collections'
 import { fetchCollection } from './loader'

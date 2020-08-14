@@ -1,5 +1,5 @@
 import type { Plugin } from 'vite'
-import { PurgeIconsOptions } from 'purge-icons'
+import { PurgeIconsOptions } from '@purge-icons/core'
 import { createServerPlugin } from './server'
 import { createRollupPlugin } from './build'
 

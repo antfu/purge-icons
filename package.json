@@ -10,11 +10,13 @@
   "homepage": "https://github.com/antfu/purge-icons",
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "build": "lerna run build"
   },
   "devDependencies": {
     "@antfu/eslint-config-ts": "^0.2.14",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
-    "eslint": "^7.6.0"
+    "eslint": "^7.6.0",
+    "lerna": "^3.22.1"
   }
 }

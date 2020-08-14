@@ -2,5 +2,6 @@ node_modules
 .DS_Store
 dist
 **/src/generated
+packages/@purge-icons/core/README.md
 packages/purge-icons/README.md
-packages/purge-icons/LICENSE
+packages/**/LICENSE

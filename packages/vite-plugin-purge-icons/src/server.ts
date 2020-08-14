@@ -1,6 +1,6 @@
 import type { ServerPlugin } from 'vite'
-import { PurgeIconsOptions, PurgeIcons } from 'purge-icons'
-import { IMPORT_PATH } from './constants'
+import { PurgeIconsOptions, PurgeIcons } from '@purge-icons/core'
+import { IMPORT_PATH } from '../../constants'
 
 export function createServerPlugin(options: PurgeIconsOptions): ServerPlugin {
   return ({ app }) => {

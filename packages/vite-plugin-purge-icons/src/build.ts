@@ -1,6 +1,6 @@
 import type { Plugin } from 'vite'
-import { PurgeIcons, PurgeIconsOptions } from 'purge-icons'
-import { IMPORT_PATH } from './constants'
+import { PurgeIcons, PurgeIconsOptions } from '../../@purge-icons/core/dist'
+import { IMPORT_PATH } from '../../constants'
 
 type ElementType<T extends Array<any>> = T extends Array<infer R> ? R : never
 type RollupPlugin = ElementType<NonNullable<NonNullable<Plugin['rollupInputOptions']>['plugins']>>

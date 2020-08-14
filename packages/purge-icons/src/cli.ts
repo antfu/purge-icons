@@ -1,5 +1,5 @@
 import yargs from 'yargs'
-import { PurgeIcons } from '.'
+import { PurgeIcons } from '@purge-icons/core'
 
 // eslint-disable-next-line no-unused-expressions
 yargs

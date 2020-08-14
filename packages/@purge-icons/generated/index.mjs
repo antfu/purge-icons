@@ -1,3 +1,3 @@
-import Iconfiy from '@iconify/iconify'
+import Iconify from '@iconify/iconify'
 
-export default Iconfiy
+export default Iconify

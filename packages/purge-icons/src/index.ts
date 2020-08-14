@@ -1,3 +1,1 @@
-export * from './types'
-export * from './codegen'
-export * from './loader'
+export * from '@purge-icons/core'
