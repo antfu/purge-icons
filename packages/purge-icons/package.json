@@ -1,6 +1,6 @@
 {
   "name": "purge-icons",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "CLI for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,7 +28,7 @@
     "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.2.10",
+    "@purge-icons/core": "^0.2.11",
     "yargs": "^15.4.1"
   },
   "devDependencies": {
