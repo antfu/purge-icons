@@ -75,12 +75,14 @@ purge-icons --help
 
 > Programmatic API is still working in progress as well.
 
+For programmatic use only, you can use `@purge-icons/core`
+
 ```bash
-npm i -D purge-icons
+npm i -D @purge-icons/core
 ```
 
 ```ts
-import { PurgeIconsOptions, PurgeIcons } from 'purge-icons'
+import { PurgeIconsOptions, PurgeIcons } from '@purge-icons/core'
 
 const code = await PurgeIcons({
   // globs for searching source file to analyze

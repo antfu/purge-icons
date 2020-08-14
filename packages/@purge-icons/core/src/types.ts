@@ -23,9 +23,11 @@ export interface PurgeIconsOptions {
   extractors?: Extractor[]
   iconSource?: IconSource
   remoteDataAPI?: string
-  iconifyImport?: string
+  iconifyImportName?: string
+  format?: OutputFormat
 }
 
 export type IconSource = 'local' | 'remote' | 'auto'
+export type OutputFormat = 'mjs' | 'cjs' | 'ts' | 'json'
 
 export type CollectionCache = Partial<Record<CollectionId, IconifyJSON>>

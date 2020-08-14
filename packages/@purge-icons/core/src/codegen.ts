@@ -106,15 +106,38 @@ export async function GetIconsData(icons: string[], options: PurgeIconsOptions =
 
 export async function CodeGen(icons: string[], options: PurgeIconsOptions = {}) {
   const data = await GetIconsData(icons, options)
+  const json = JSON.stringify(data)
+
+  if (options.format === 'json')
+    return json
 
   // since Iconify does not ship with esm build yet. It required to use `.default` to get the instance.
-  const iconifyImport = options.iconifyImport || 'import Module from \'@iconify/iconify\'\nconst Iconify = Module.default'
+  const iconifyImport = options.iconifyImportName || '@iconify/iconify'
 
-  return `${iconifyImport}
+  let importScript = ''
+  let exportScript = ''
 
-const collections = JSON.parse('${JSON.stringify(data).replace(/\\/g, '\\\\').replace(/'/g, '\\\'')}')
+  switch (options.format) {
+    case 'cjs':
+      importScript = `const Iconify = required('${iconifyImport}')`
+      exportScript = 'module.exports = Iconify'
+      break
+    case 'mjs':
+    case 'ts':
+    case undefined: // default
+      importScript = `import Module from '${iconifyImport}'\nconst Iconify = Module.default`
+      exportScript = 'export default Iconify'
+      break
+    default:
+      throw new Error(`Unknown output format "${options.format}"`)
+  }
+
+  return `${importScript}
+
+const collections = JSON.parse('${json.replace(/\\/g, '\\\\').replace(/'/g, '\\\'')}')
 
 collections.forEach(c => Iconify.addCollection(c))
 
-export default Iconify`
+${exportScript}
+`
 }

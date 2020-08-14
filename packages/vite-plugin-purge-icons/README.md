@@ -18,12 +18,14 @@ import PurgeIcons from 'vite-plugin-purge-icons'
 
 export default {
   plugins: [
-    PurgeIcons()
+    PurgeIcons({
+      /* PurgeIcons Options */
+    })
   ]
 }
 ```
 
-Import the `@purge-icons/generated` in your `main.js`
+Import `@purge-icons/generated` in your `main.js`
 
 ```ts
 import { createApp } from 'vue'
@@ -36,7 +38,7 @@ createApp(App).mount('#app')
 
 ## Configuration
 
-Check out in [PurgeIcons](https://github.com/antfu/purge-icons#README)
+Check out in [PurgeIcons](https://github.com/antfu/purge-icons#programmatic-api)
 
 ## Example
 
