@@ -28,6 +28,6 @@ export interface PurgeIconsOptions {
 }
 
 export type IconSource = 'local' | 'remote' | 'auto'
-export type OutputFormat = 'mjs' | 'cjs' | 'ts' | 'json'
+export type OutputFormat = 'mjs' | 'cjs' | 'ts' | 'json' | 'js'
 
 export type CollectionCache = Partial<Record<CollectionId, IconifyJSON>>

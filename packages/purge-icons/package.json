@@ -25,10 +25,13 @@
   ],
   "scripts": {
     "prebuild": "esno scripts/prepare.ts",
-    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts"
+    "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
+    "dev": "esno ./src/cli.ts"
   },
   "dependencies": {
     "@purge-icons/core": "^0.2.11",
+    "@types/fs-extra": "^9.0.1",
+    "fs-extra": "^9.0.1",
     "yargs": "^15.4.1"
   },
   "devDependencies": {

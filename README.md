@@ -65,7 +65,28 @@ You can either install PurgeIcons as a dev dependency and use the CLI with npx o
 
 ```bash
 npm i -g purge-icons
+
 ```
+
+Scan the all the html file and geneted a `mjs` bundle
+
+```bash
+purge-icons --content 'src/*.html' --format mjs --output output.js
+```
+
+From multiple sources and use args shorthands, `format` can be auto inferred from the `output` option  
+
+```bash
+purge-icons -c 'index.html,src/**/*.vue' -o output.ts
+```
+
+Or export plain json file for other tools to process
+
+```bash
+purge-icons -c index.html -o output.json
+```
+
+See more options by
 
 ```bash
 purge-icons --help
