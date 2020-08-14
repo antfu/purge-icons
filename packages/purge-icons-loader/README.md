@@ -11,17 +11,27 @@ Install
 npm i purge-icons-loader -D # yarn add purge-icons-loader -D
 ```
 
-Add to your `webpack.config.js`
+Add it to `webpack.config.js`
 
 ```ts
-const PurgeIcons = require('purge-icons-loader')
-
+// webpack.config.js
 module.exports = {
-  plugins: [
-    PurgeIcons({
-      /* PurgeIcons Options */
-    })
-  ]
+  // ...options
+  module: {
+    rules: [
+      {
+        test: '@purge-icons/generated',
+        use: [
+          {
+            loader: 'purge-icons-loader',
+            options: {
+              /* PurgeIcons Options */
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 ```
 

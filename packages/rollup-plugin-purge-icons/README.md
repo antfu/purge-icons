@@ -11,7 +11,7 @@ Install
 npm i rollup-plugin-purge-icons -D # yarn add rollup-plugin-purge-icons -D
 ```
 
-Add to your `rollup.config.js`
+Add it to `rollup.config.js`
 
 ```ts
 import PurgeIcons from 'rollup-plugin-purge-icons'

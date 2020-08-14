@@ -11,9 +11,10 @@ Install
 npm i vite-plugin-purge-icons -D # yarn add vite-plugin-purge-icons -D
 ```
 
-Add to your `vite.config.js`
+Add it to `vite.config.js`
 
 ```ts
+// vite.config.js
 import PurgeIcons from 'vite-plugin-purge-icons'
 
 export default {
