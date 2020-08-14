@@ -27,33 +27,38 @@ Underneath, it's powered by [**Iconify**](https://iconify.design), which you get
 
 Browser the icon sets in [Icônes](https://icones.netlify.app/) or [Iconify](https://iconify.design/icon-sets/).
 
-## How It Works
 
-[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has a id as the prefix of for its icons. For example:
+## Usage
+
+Just like what you used to do for Iconify.
 
 ```html
-<span class="iconify" data-icon="fa:home"></span>   <!-- Font Awesome -->
-<span class="iconify" data-icon="noto:bird"></span> <!-- Note Icons -->
-<span class="iconify" data-icon="mdi:alert"></span> <!-- Material Design Icons -->
+<span class="iconify" data-icon="fa:home"></span>
 ```
 
-Iconify achieve that by building up a API service that only send the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
+Or even dynamic
 
-However, the downside of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and so its accessability for your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). In that way, you would need to manually import every icon you use.
+```js
+const span = createElement('span')
+span.class = 'iconify'
+span.data.icon = isDark ? 'carbon:moon' : 'carbon:sun'
 
-Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
+// DON'T, PurgeIcons won't extract them correct.
+// add them to `included` to be always bundled if you really want this
+span.data.icon = `carbon:${isDark ? 'moon' : 'sun'}`
+```
 
-## Frameworks Support
+## Install
 
 **PurgeIcons** is designed to be framework independent, but using framework plugins is the most recommended way to get started. Check out the supported frameworks in the following list. We are trying to make more frameworks able to use PurgeIcons out-of-box. Pull requests are great welcome!
 
 ### Official Plugins
 
-| Framework | Plugin | Templates |
-|:---:| --- | -- |
+| | Plugin | Templates |
+| --- | --- | -- |
 | Webpack | [purge-icons-loader](./packages/purge-icons-loader) | TBD |
 | Rollup | [rollup-plugin-purge-icons](./packages/rollup-plugin-purge-icons) | TBD |
-| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Starter Template](https://github.com/antfu/vitesse) |
+| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Vitesse](https://github.com/antfu/vitesse) |
 
 <br>
 
@@ -134,6 +139,22 @@ export interface PurgeIconsOptions {
   iconSource?: IconSource // default to 'auto'
 }
 ```
+
+## How It Works
+
+[**Iconify**](https://iconify.design) is an icon framework that provide an unified syntax to use icons from its [huge collections](https://iconify.design/icon-sets/) on-demanded. Each icon set has a id as the prefix of for its icons. For example:
+
+```html
+<span class="iconify" data-icon="fa:home"></span>   <!-- Font Awesome -->
+<span class="iconify" data-icon="noto:bird"></span> <!-- Note Icons -->
+<span class="iconify" data-icon="mdi:alert"></span> <!-- Material Design Icons -->
+```
+
+Iconify achieve that by building up a API service that only send the icons you need. It provides a great flexibility that you can try with different design style and without to worry about including a large amount of unused icons that eat up your bandwidth and slow down your page load.
+
+However, the downside of API querying is that the icons won't be available on the first meaningful paint and your app will be heavy relied on the API servers' status and so its accessability for your users. Iconify also provides the [offline solution by implementing frameworks components](https://docs.iconify.design/implementations/#components). In that way, you would need to manually import every icon you use.
+
+Thus, PurgeIcons was born. By scanning your code, it generates [bundles](https://docs.iconify.design/sources/bundles/) for Iconify and load them synchronously. You can use icons in the exact same way as you would with the API based solution.
 
 
 ## TODO

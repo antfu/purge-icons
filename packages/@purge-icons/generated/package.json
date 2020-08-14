@@ -1,7 +1,7 @@
 {
   "name": "@purge-icons/generated",
   "version": "0.3.0",
-  "description": "Placeholder for purge-icons' generated codes",
+  "description": "Placeholder & Types for generated codes of PurgeIcons",
   "main": "index.js",
   "module": "index.mjs",
   "types": "index.d.js",
@@ -11,6 +11,5 @@
   },
   "dependencies": {
     "@iconify/iconify": ">=2.0.0-beta.6"
-  },
-  "gitHead": "1b9fd9a024bad619d4a6777076ef1b3c0b803de9"
+  }
 }

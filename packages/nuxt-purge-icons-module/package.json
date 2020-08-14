@@ -1,16 +1,16 @@
 {
-  "name": "rollup-plugin-purge-icons",
+  "name": "nuxt-purge-icons-module",
   "version": "0.3.0",
-  "description": "Rollup plugin for PurgeIcons",
+  "description": "Nuxt module for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "keywords": [
-    "rollup-plugin",
+    "nuxt-module",
     "purge-icons"
   ],
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
-  "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/rollup-plugin-purge-icons#readme",
+  "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/nuxt-purge-icons-module#readme",
   "license": "MIT",
   "files": [
     "dist"
@@ -28,7 +28,6 @@
     "@purge-icons/generated": "^0.3.0"
   },
   "devDependencies": {
-    "rollup": "^2.20.0",
     "tsup": "^3.4.3",
     "typescript": "^3.9.7"
   }

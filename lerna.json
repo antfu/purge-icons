@@ -1,7 +1,8 @@
 {
   "packages": [
     "packages/*",
-    "packages/@purge-icons/*"
+    "packages/@purge-icons/*",
+    "examples/*"
   ],
   "command": {
     "version": {

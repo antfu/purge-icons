@@ -6,3 +6,4 @@ packages/@purge-icons/core/README.md
 packages/purge-icons/README.md
 packages/**/LICENSE
 **/snapshots/*.md
+*.log

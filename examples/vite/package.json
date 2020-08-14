@@ -11,6 +11,6 @@
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-rc.5",
     "vite": "^1.0.0-rc.4",
-    "vite-plugin-purge-icons": "workspace:*"
+    "vite-plugin-purge-icons": "^0.3.0"
   }
 }
