@@ -2,9 +2,7 @@
   "name": "nuxt-purge-icons-module",
   "version": "0.3.1",
   "description": "Nuxt module for PurgeIcons",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
   "keywords": [
     "nuxt-module",
     "purge-icons"
@@ -20,15 +18,8 @@
     "url": "git+https://github.com/antfu/purge-icons.git"
   },
   "bugs": "https://github.com/antfu/purge-icons/issues",
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts"
-  },
   "dependencies": {
-    "@purge-icons/core": "^0.3.1",
+    "purge-icons-loader": "^0.3.1",
     "@purge-icons/generated": "^0.3.1"
-  },
-  "devDependencies": {
-    "tsup": "^3.4.3",
-    "typescript": "^3.9.7"
   }
 }
