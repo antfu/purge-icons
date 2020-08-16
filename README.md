@@ -54,11 +54,15 @@ span.data.icon = `carbon:${isDark ? 'moon' : 'sun'}`
 
 ### Official Plugins
 
-| | Plugin | Templates |
-| --- | --- | -- |
-| Webpack | [purge-icons-webpack-plugin](./packages/purge-icons-webpack-plugin) | TBD |
-| Rollup | [rollup-plugin-purge-icons](./packages/rollup-plugin-purge-icons) | TBD |
-| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Vitesse](https://github.com/antfu/vitesse) |
+| | Plugin | Example | Template |
+| --- | --- | --- | --- |
+| Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Example](./examples/vite) | [Vitesse](https://github.com/antfu/vitesse) |
+| Nuxt | [nuxt-plugin-purge-module](./packages/nuxt-plugin-purge-module) | [Example](./examples/nuxt) | |
+| Vue CLI | Coming... | | |
+| Gridsome | Coming... | | |
+| Parcel | Coming... | | |
+| Webpack | [purge-icons-webpack-plugin](./packages/purge-icons-webpack-plugin) | | |
+| Rollup | [rollup-plugin-purge-icons](./packages/rollup-plugin-purge-icons) | | |
 
 <br>
 
