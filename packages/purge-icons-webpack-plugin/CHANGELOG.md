@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.3.1](https://github.com/antfu/purge-icons/compare/v0.3.0...v0.3.1) (2020-08-14)
 
-**Note:** Version bump only for package purge-icons-loader
+**Note:** Version bump only for package purge-icons-webpack-plugin
 
 
 

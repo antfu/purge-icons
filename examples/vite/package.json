@@ -1,8 +1,9 @@
 {
+  "name": "@purge-icons/vite-example",
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "example:build": "vite build"
   },
   "dependencies": {
     "@iconify/iconify": "^1.0.7",

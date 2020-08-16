@@ -120,7 +120,7 @@ export async function CodeGen(icons: string[], options: PurgeIconsOptions = {}) 
   switch (options.format) {
     case 'js':
     case 'cjs':
-      importScript = `const Iconify = required('${iconifyImport}')`
+      importScript = `const Iconify = require('${iconifyImport}').default`
       exportScript = 'module.exports = Iconify'
       break
     case 'mjs':

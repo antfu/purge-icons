@@ -1,0 +1,22 @@
+{
+  "name": "@purge-icons/nuxt-example",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "example:build": "nuxt-ts build",
+    "example:start": "nuxt-ts start",
+    "example:generate": "nuxt-ts generate"
+  },
+  "dependencies": {
+    "@iconify/iconify": "2.0.0-beta.6",
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "nuxt": "^2.14.0",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.0",
+    "@nuxt/typescript-build": "^2.0.2",
+    "@nuxtjs/tailwindcss": "^2.1.0",
+    "nuxt-purge-icons-module": "^0.3.1"
+  }
+}

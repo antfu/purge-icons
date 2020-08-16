@@ -56,7 +56,7 @@ span.data.icon = `carbon:${isDark ? 'moon' : 'sun'}`
 
 | | Plugin | Templates |
 | --- | --- | -- |
-| Webpack | [purge-icons-loader](./packages/purge-icons-loader) | TBD |
+| Webpack | [purge-icons-webpack-plugin](./packages/purge-icons-webpack-plugin) | TBD |
 | Rollup | [rollup-plugin-purge-icons](./packages/rollup-plugin-purge-icons) | TBD |
 | Vite | [vite-plugin-purge-icons](./packages/vite-plugin-purge-icons) | [Vitesse](https://github.com/antfu/vitesse) |
 

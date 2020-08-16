@@ -16,18 +16,12 @@ module.exports = {
   /* ...config */
 
   buildModules: [
-    'purge-icons'
+    'nuxt-purge-icons-module'
   ],
   purgeIcons: {
     /* PurgeIcons Options */
   }
 }
-```
-
-Import `@purge-icons/generated` in your entry file
-
-```ts
-import '@purge-icons/generated' // <-- This
 ```
 
 ## Configuration

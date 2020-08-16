@@ -1,16 +1,16 @@
 {
-  "name": "purge-icons-loader",
+  "name": "purge-icons-webpack-plugin",
   "version": "0.3.1",
-  "description": "Webpack loader for PurgeIcons",
+  "description": "Webpack plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "keywords": [
-    "webpack-loader",
+    "webpack-plugin",
     "purge-icons"
   ],
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
-  "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/purge-icons-loader#readme",
+  "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/purge-icons-webpack-plugin#readme",
   "license": "MIT",
   "files": [
     "dist"
@@ -25,12 +25,11 @@
   },
   "dependencies": {
     "@purge-icons/core": "^0.3.1",
-    "@purge-icons/generated": "^0.3.1"
+    "@purge-icons/generated": "^0.3.1",
+    "webpack-virtual-modules": "^0.2.2"
   },
   "devDependencies": {
-    "@types/loader-utils": "^2.0.1",
     "@types/webpack": "^4.41.21",
-    "loader-utils": "^2.0.0",
     "tsup": "^3.4.3",
     "typescript": "^3.9.7"
   }

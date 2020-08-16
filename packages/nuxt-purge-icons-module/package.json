@@ -19,7 +19,7 @@
   },
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "dependencies": {
-    "purge-icons-loader": "^0.3.1",
+    "purge-icons-webpack-plugin": "^0.3.1",
     "@purge-icons/generated": "^0.3.1"
   }
 }
