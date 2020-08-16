@@ -1,6 +1,6 @@
 {
   "name": "purge-icons-webpack-plugin",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Webpack plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,8 +24,8 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.3.1",
-    "@purge-icons/generated": "^0.3.1",
+    "@purge-icons/core": "^0.4.0",
+    "@purge-icons/generated": "^0.4.0",
     "webpack-virtual-modules": "^0.2.2"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 {
   "name": "nuxt-purge-icons-module",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Nuxt module for PurgeIcons",
   "main": "index.js",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "bugs": "https://github.com/antfu/purge-icons/issues",
   "dependencies": {
-    "purge-icons-webpack-plugin": "^0.3.1",
-    "@purge-icons/generated": "^0.3.1"
+    "@purge-icons/generated": "^0.4.0",
+    "purge-icons-webpack-plugin": "^0.4.0"
   }
 }

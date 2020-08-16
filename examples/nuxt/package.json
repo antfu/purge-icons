@@ -17,6 +17,7 @@
     "@nuxt/types": "^2.14.0",
     "@nuxt/typescript-build": "^2.0.2",
     "@nuxtjs/tailwindcss": "^2.1.0",
-    "nuxt-purge-icons-module": "^0.3.1"
-  }
+    "nuxt-purge-icons-module": "^0.4.0"
+  },
+  "version": "0.4.0"
 }
