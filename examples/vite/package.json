@@ -7,10 +7,10 @@
   },
   "dependencies": {
     "@iconify/iconify": "^1.0.7",
-    "vue": "^3.0.0-rc.5"
+    "vue": "^3.0.0-rc.9"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.0-rc.5",
+    "@vue/compiler-sfc": "^3.0.0-rc.9",
     "vite": "^1.0.0-rc.4",
     "vite-plugin-purge-icons": "^0.4.0"
   },
