@@ -8,8 +8,10 @@
 Install
 
 ```bash
-npm i vite-plugin-purge-icons -D # yarn add vite-plugin-purge-icons -D
+npm i vite-plugin-purge-icons @iconify/json -D
 ```
+
+> `@iconify/json` is an optional dependencies of PurgeIcons. When it presents in your `node_modules`, PurgeIcons will load the icons from it locally, otherwise, PurgeIcons will try to fetch the iconset your requested online.
 
 Add it to `vite.config.js`
 
