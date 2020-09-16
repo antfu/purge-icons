@@ -31,8 +31,8 @@
     "fs-extra": "^9.0.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.213",
-    "@iconify/types": "^1.0.3",
+    "@iconify/json": "^1.1.224",
+    "@iconify/types": "^1.0.4",
     "@types/debug": "^4.1.5",
     "@types/fs-extra": "^9.0.1",
     "@types/yargs": "^15.0.5",

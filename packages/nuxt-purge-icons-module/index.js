@@ -1,4 +1,4 @@
-import PurgeIconsPlugin from 'purge-icons-webpack-plugin'
+import { PurgeIcons } from 'purge-icons-webpack-plugin'
 
 const defaultOptions = {
   content: [
@@ -12,7 +12,7 @@ const defaultOptions = {
 module.exports = function(moduleOptions = {}) {
   this.extendBuild((config) => {
     const options = Object.assign({}, defaultOptions, this.options.purgeIcons || {}, moduleOptions)
-    config.plugins.push(new PurgeIconsPlugin(options))
+    config.plugins.push(new PurgeIcons(options))
   })
 
   this.addPlugin(require.resolve('nuxt-purge-icons-module/plugin.js'))

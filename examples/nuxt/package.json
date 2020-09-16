@@ -9,15 +9,15 @@
   },
   "dependencies": {
     "@iconify/iconify": "2.0.0-rc.1",
-    "@nuxt/typescript-runtime": "^1.0.0",
-    "nuxt": "^2.14.4",
+    "@nuxt/typescript-runtime": "^2.0.0",
+    "nuxt": "^2.14.5",
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.4",
-    "@nuxt/typescript-build": "^2.0.2",
+    "@nuxt/types": "^2.14.5",
+    "@nuxt/typescript-build": "^2.0.3",
     "@nuxtjs/tailwindcss": "^3.0.2",
-    "nuxt-purge-icons-module": "^0.4.0"
+    "nuxt-purge-icons-module": "*"
   },
   "version": "0.4.0"
 }

@@ -1,11 +1,11 @@
 import type { Compiler } from 'webpack'
-import { PurgeIcons, PurgeIconsOptions } from '@purge-icons/core'
+import { PurgeIcons as Purge, PurgeIconsOptions } from '@purge-icons/core'
 // @ts-ignore
 import VirtualModulesPlugin from 'webpack-virtual-modules'
 
 const modulePath = 'node_modules/@purge-icons/generated'
 
-export default class PurgeIconsPlugin {
+export class PurgeIcons {
   plugin: any
 
   constructor(public readonly options: PurgeIconsOptions = {}) {
@@ -15,7 +15,7 @@ export default class PurgeIconsPlugin {
   apply(compiler: Compiler) {
     this.plugin.apply(compiler)
 
-    PurgeIcons({
+    Purge({
       ...this.options,
       format: 'cjs',
     })
@@ -24,3 +24,5 @@ export default class PurgeIconsPlugin {
       })
   }
 }
+
+export default PurgeIcons

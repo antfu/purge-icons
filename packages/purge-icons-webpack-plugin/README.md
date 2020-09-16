@@ -14,13 +14,13 @@ npm i purge-icons-webpack-plugin -D # yarn add purge-icons-webpack-plugin -D
 Add it to `webpack.config.js`
 
 ```ts
-const PurgeIconsPlugin = require('purge-icons-webpack-plugin')
+const { PurgeIcons } = require('purge-icons-webpack-plugin')
 
 // webpack.config.js
 module.exports = {
   // ...options
   plugins: [
-    new PurgeIconsPlugin({
+    new PurgeIcons({
       /* PurgeIcons Options */
     })
   ]
