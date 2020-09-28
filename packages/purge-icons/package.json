@@ -1,6 +1,6 @@
 {
   "name": "purge-icons",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "CLI for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

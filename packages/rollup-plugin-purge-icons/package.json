@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-purge-icons",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Rollup plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
