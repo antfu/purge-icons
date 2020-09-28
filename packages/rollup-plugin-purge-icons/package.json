@@ -20,6 +20,9 @@
     "url": "git+https://github.com/antfu/purge-icons.git"
   },
   "bugs": "https://github.com/antfu/purge-icons/issues",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },

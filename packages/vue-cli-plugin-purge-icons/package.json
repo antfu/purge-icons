@@ -23,6 +23,9 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
+  "engines": {
+    "node": ">= 12"
+  },
   "dependencies": {
     "@purge-icons/core": "^0.4.1",
     "@purge-icons/generated": "^0.4.1"

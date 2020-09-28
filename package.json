@@ -9,6 +9,9 @@
   },
   "homepage": "https://github.com/antfu/purge-icons",
   "bugs": "https://github.com/antfu/purge-icons/issues",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "build": "lerna run build",

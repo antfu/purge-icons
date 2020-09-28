@@ -23,6 +23,9 @@
     "cli",
     "purge-icons"
   ],
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "prebuild": "esno scripts/prepare.ts",
     "build": "tsup src/index.ts src/cli.ts --format cjs,esm --dts",
