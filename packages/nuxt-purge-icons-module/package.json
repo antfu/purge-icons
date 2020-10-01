@@ -1,6 +1,6 @@
 {
   "name": "nuxt-purge-icons-module",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Nuxt module for PurgeIcons",
   "main": "index.js",
   "keywords": [

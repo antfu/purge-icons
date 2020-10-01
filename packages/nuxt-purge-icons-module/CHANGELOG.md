@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/antfu/purge-icons/compare/v0.4.2...v0.4.3) (2020-10-01)
+
+
+### Bug Fixes
+
+* **nuxt-module:** npm files ([3771a16](https://github.com/antfu/purge-icons/commit/3771a166bcaad40f9e90bbc8b0b0ec8f8bda7b54))
+
+
+
+
+
 ## [0.4.2](https://github.com/antfu/purge-icons/compare/v0.4.1...v0.4.2) (2020-09-28)
 
 **Note:** Version bump only for package nuxt-purge-icons-module
