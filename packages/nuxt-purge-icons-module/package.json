@@ -11,7 +11,8 @@
   "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/nuxt-purge-icons-module#readme",
   "license": "MIT",
   "files": [
-    "dist"
+    "index.js",
+    "plugin.js"
   ],
   "repository": {
     "type": "git",
