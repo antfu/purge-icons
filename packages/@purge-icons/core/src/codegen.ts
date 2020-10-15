@@ -126,7 +126,7 @@ export async function CodeGen(icons: string[], options: PurgeIconsOptions = {}) 
     case 'mjs':
     case 'ts':
     case undefined: // default
-      importScript = `import Module from '${iconifyImport}'\nconst Iconify = Module.default`
+      importScript = `import Module from '${iconifyImport}'\nconst Iconify = Module.default || Module`
       exportScript = 'export default Iconify'
       break
     default:
