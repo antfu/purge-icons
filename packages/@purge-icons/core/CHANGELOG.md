@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/antfu/purge-icons/compare/v0.4.3...v0.4.4) (2020-10-15)
+
+
+### Bug Fixes
+
+* esm exports ([bc571c9](https://github.com/antfu/purge-icons/commit/bc571c9d7bea0be37c64f525fd9c7ad7bc8f1959))
+
+
+
+
+
 ## [0.4.1](https://github.com/antfu/purge-icons/compare/v0.4.0...v0.4.1) (2020-09-16)
 
 
