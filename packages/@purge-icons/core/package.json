@@ -25,24 +25,24 @@
   },
   "dependencies": {
     "@iconify/iconify": "2.0.0-rc.1",
-    "axios": "^0.20.0",
-    "debug": "^4.2.0",
+    "axios": "^0.21.0",
+    "debug": "^4.3.0",
     "fast-glob": "^3.2.4",
     "fs-extra": "^9.0.1"
   },
   "devDependencies": {
-    "@iconify/json": "^1.1.224",
+    "@iconify/json": "^1.1.251",
     "@iconify/types": "^1.0.4",
     "@types/debug": "^4.1.5",
-    "@types/fs-extra": "^9.0.1",
-    "@types/yargs": "^15.0.5",
-    "ava": "^3.12.1",
+    "@types/fs-extra": "^9.0.3",
+    "@types/yargs": "^15.0.9",
+    "ava": "^3.13.0",
     "cross-env": "^7.0.2",
-    "esbuild-register": "^1.0.2",
+    "esbuild-register": "^1.1.0",
     "esm": "^3.2.25",
-    "esno": "^0.2.0",
-    "tsup": "^3.6.1",
-    "typescript": "^4.0.2"
+    "esno": "^0.2.4",
+    "tsup": "^3.7.1",
+    "typescript": "^4.0.5"
   },
   "ava": {
     "extensions": [
