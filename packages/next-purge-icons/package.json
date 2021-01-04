@@ -1,6 +1,6 @@
 {
   "name": "next-purge-icons",
-  "version": "0.4.5",
+  "version": "0.5.0",
   "description": "Next.js plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,8 +24,8 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.4.5",
-    "@purge-icons/generated": "^0.4.1"
+    "@purge-icons/core": "^0.5.0",
+    "@purge-icons/generated": "^0.5.0"
   },
   "devDependencies": {
     "tsup": "^3.11.0",
