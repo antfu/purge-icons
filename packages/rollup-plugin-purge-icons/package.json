@@ -31,8 +31,8 @@
     "@purge-icons/generated": "^0.4.1"
   },
   "devDependencies": {
-    "rollup": "^2.33.1",
-    "tsup": "^3.7.1",
-    "typescript": "^4.0.5"
+    "rollup": "^2.35.1",
+    "tsup": "^3.11.0",
+    "typescript": "^4.1.3"
   }
 }

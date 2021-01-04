@@ -8,15 +8,15 @@
     "example:generate": "nuxt-ts generate"
   },
   "dependencies": {
-    "@iconify/iconify": "2.0.0-rc.1",
+    "@iconify/iconify": "2.0.0-rc.5",
     "@nuxt/typescript-runtime": "^2.0.0",
-    "nuxt": "^2.14.7",
+    "nuxt": "^2.14.12",
     "vue": "^2.6.12"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.7",
+    "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.3",
-    "@nuxtjs/tailwindcss": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^3.4.2",
     "nuxt-purge-icons-module": "^0.4.5"
   },
   "version": "0.4.5"
