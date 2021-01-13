@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-purge-icons",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Vue CLI plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -27,8 +27,8 @@
     "node": ">= 12"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.5.0",
-    "@purge-icons/generated": "^0.5.0"
+    "@purge-icons/core": "^0.5.1",
+    "@purge-icons/generated": "^0.5.1"
   },
   "devDependencies": {
     "tsup": "^3.11.0",

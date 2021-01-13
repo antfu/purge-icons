@@ -1,6 +1,6 @@
 {
   "name": "purge-icons",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "CLI for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -32,7 +32,7 @@
     "dev": "esno ./src/cli.ts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.5.0",
+    "@purge-icons/core": "^0.5.1",
     "@types/fs-extra": "^9.0.6",
     "fs-extra": "^9.0.1",
     "yargs": "^16.2.0"
