@@ -38,8 +38,8 @@
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "esno": "^0.3.0",
-    "rollup": "^2.35.1",
+    "esno": "^0.4.0",
+    "rollup": "^2.36.1",
     "tsup": "^3.11.0",
     "typescript": "^4.1.3"
   }

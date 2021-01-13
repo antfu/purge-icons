@@ -8,10 +8,10 @@
     "example:generate": "nuxt-ts generate"
   },
   "dependencies": {
-    "@iconify/iconify": "2.0.0-rc.5",
+    "@iconify/iconify": "2.0.0-rc.6",
     "@nuxt/typescript-runtime": "^2.0.0",
     "nuxt": "^2.14.12",
-    "vue": "^2.6.12"
+    "vue": "^3.0.5"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",

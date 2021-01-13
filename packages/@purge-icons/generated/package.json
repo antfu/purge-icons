@@ -10,6 +10,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@iconify/iconify": ">=2.0.0-rc.5"
+    "@iconify/iconify": ">=2.0.0-rc.6"
   }
 }
