@@ -13,7 +13,7 @@
     "@vitejs/plugin-vue": "^1.0.5",
     "@vue/compiler-sfc": "^3.0.5",
     "vite": "^2.0.0-beta.26",
-    "vite-plugin-purge-icons": "workspace:*"
+    "vite-plugin-purge-icons": "*"
   },
   "version": "0.5.0"
 }
