@@ -10,6 +10,7 @@
 Install
 
 ```bash
+npm i @iconify/iconify
 npm i vite-plugin-purge-icons @iconify/json -D
 ```
 
