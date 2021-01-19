@@ -1,6 +1,6 @@
 {
   "name": "@purge-icons/generated",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Placeholder & Types for generated codes of PurgeIcons",
   "main": "index.js",
   "module": "index.mjs",

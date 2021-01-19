@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-purge-icons",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Rollup plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -31,8 +31,8 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.5.1",
-    "@purge-icons/generated": "^0.5.1"
+    "@purge-icons/core": "^0.5.2",
+    "@purge-icons/generated": "^0.5.2"
   },
   "devDependencies": {
     "rollup": "^2.36.1",
