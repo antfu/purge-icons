@@ -23,7 +23,8 @@
     "node": ">= 12"
   },
   "files": [
-    "dist"
+    "dist",
+    "generated.d.ts"
   ],
   "dependencies": {
     "@purge-icons/core": "^0.5.2",

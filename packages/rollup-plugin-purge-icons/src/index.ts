@@ -1,21 +1,17 @@
 import type { Plugin } from 'rollup'
 import { PurgeIcons, PurgeIconsOptions } from '@purge-icons/core'
-import { IMPORT_PATH } from '../../constants'
+import { IMPORT_PATHS } from '../../constants'
 
 export default function CreatePlugin(options: PurgeIconsOptions): Plugin {
   return {
     name: 'purge-icons',
-    resolveId(source) {
-      if (source === IMPORT_PATH)
-        return source
-
-      return null
+    resolveId(id) {
+      if (IMPORT_PATHS.includes(id))
+        return id
     },
     async load(id) {
-      if (id === IMPORT_PATH)
+      if (IMPORT_PATHS.includes(id))
         return await PurgeIcons(options)
-
-      return null
     },
   }
 }

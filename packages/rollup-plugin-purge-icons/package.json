@@ -17,7 +17,8 @@
   "homepage": "https://github.com/antfu/purge-icons/tree/master/packages/rollup-plugin-purge-icons#readme",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "generated.d.ts"
   ],
   "repository": {
     "type": "git",
