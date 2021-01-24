@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/antfu/purge-icons/compare/v0.5.2...v0.6.0) (2021-01-24)
+
+
+### Features
+
+* support importing from subpath ([f91e9fb](https://github.com/antfu/purge-icons/commit/f91e9fb9f2cc4fba5934e0995df436ae2f852ba8))
+
+
+
+
+
 ## [0.5.2](https://github.com/antfu/purge-icons/compare/v0.5.1...v0.5.2) (2021-01-19)
 
 
