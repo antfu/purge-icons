@@ -9,13 +9,13 @@
   },
   "dependencies": {
     "@iconify/iconify": "2.0.0-rc.6",
-    "@nuxt/typescript-runtime": "^2.0.0",
-    "nuxt": "^2.14.12",
+    "@nuxt/typescript-runtime": "^2.0.1",
+    "nuxt": "^2.15.0",
     "vue": "2"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.12",
-    "@nuxt/typescript-build": "^2.0.3",
+    "@nuxt/types": "^2.15.0",
+    "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/tailwindcss": "^3.4.2",
     "nuxt-purge-icons-module": "^0.6.0"
   },

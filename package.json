@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.4.3",
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "eslint": "^7.17.0",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "eslint": "^7.20.0",
     "lerna": "^3.22.1"
   }
 }

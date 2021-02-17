@@ -37,14 +37,14 @@
   },
   "dependencies": {
     "@purge-icons/core": "^0.6.0",
-    "@types/fs-extra": "^9.0.6",
-    "fs-extra": "^9.0.1",
+    "@types/fs-extra": "^9.0.7",
+    "fs-extra": "^9.1.0",
     "yargs": "^16.2.0"
   },
   "devDependencies": {
-    "esno": "^0.4.0",
-    "rollup": "^2.36.1",
-    "tsup": "^3.11.0",
-    "typescript": "^4.1.3"
+    "esno": "^0.4.3",
+    "rollup": "^2.39.0",
+    "tsup": "^3.12.1",
+    "typescript": "^4.1.5"
   }
 }
