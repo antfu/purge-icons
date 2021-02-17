@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/antfu/purge-icons/compare/v0.6.0...v0.7.0) (2021-02-17)
+
+
+### Features
+
+* upgrade for Vite 2.0 ([4f35cc1](https://github.com/antfu/purge-icons/commit/4f35cc176ed6a8afd0c7266ec4063be62bc3ee08))
+
+
+
+
+
 # [0.6.0](https://github.com/antfu/purge-icons/compare/v0.5.2...v0.6.0) (2021-01-24)
 
 **Note:** Version bump only for package purge-icons-webpack-plugin
