@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@types/webpack": "^4.41.26",
-    "tsup": "^3.12.1",
-    "typescript": "^4.1.5"
+    "tsup": "^4.5.1",
+    "typescript": "^4.2.2"
   }
 }
