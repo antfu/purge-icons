@@ -1,5 +1,5 @@
 import type { IconifyJSON } from '@iconify/types'
-import { CollectionId } from './generated/collections'
+import type { CollectionId } from './generated/collections'
 
 export type ExtractorResult = string[]
 export type ExtractorFunction<T = string> = (content: T) => ExtractorResult

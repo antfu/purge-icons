@@ -3,9 +3,10 @@ import fg from 'fast-glob'
 import fs from 'fs-extra'
 import type { IconifyJSON } from '@iconify/iconify'
 import { debug } from './utils'
-import { ExtractorRegex, CollectionId, CollectionIds } from './generated/collections'
+import type { CollectionId } from './generated/collections'
+import { CollectionIds, ExtractorRegex } from './generated/collections'
 import { fetchCollection } from './loader'
-import { PurgeIconsOptions, Extractor, RawContent } from './types'
+import type { Extractor, PurgeIconsOptions, RawContent } from './types'
 import { DELIMITER } from './constants'
 
 export async function PurgeIcons(options: PurgeIconsOptions = {}) {

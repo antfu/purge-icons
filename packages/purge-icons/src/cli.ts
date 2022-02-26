@@ -1,6 +1,7 @@
 import path from 'path'
 import yargs from 'yargs'
-import { PurgeIcons, OutputFormat } from '@purge-icons/core'
+import type { OutputFormat } from '@purge-icons/core'
+import { PurgeIcons } from '@purge-icons/core'
 import fs from 'fs-extra'
 
 // eslint-disable-next-line no-unused-expressions

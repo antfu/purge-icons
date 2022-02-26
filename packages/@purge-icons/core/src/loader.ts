@@ -1,7 +1,7 @@
 import axios from 'axios'
 import type { IconifyJSON } from '@iconify/types'
-import { CollectionId } from './generated/collections'
-import { IconSource, CollectionCache } from './types'
+import type { CollectionId } from './generated/collections'
+import type { CollectionCache, IconSource } from './types'
 import { DEFAULT_API_PATH } from './constants'
 import { debug } from './utils'
 

@@ -1,5 +1,6 @@
 import type { Plugin } from 'rollup'
-import { PurgeIcons, PurgeIconsOptions } from '@purge-icons/core'
+import type { PurgeIconsOptions } from '@purge-icons/core'
+import { PurgeIcons } from '@purge-icons/core'
 import { IMPORT_PATHS } from '../../constants'
 
 export default function CreatePlugin(options: PurgeIconsOptions): Plugin {

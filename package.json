@@ -19,9 +19,9 @@
     "release": "pnpm build && lerna publish --conventional-commits"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.4.3",
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "eslint": "^7.20.0",
+    "@antfu/eslint-config": "^0.16.1",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "eslint": "^8.10.0",
     "lerna": "^3.22.1"
   }
 }

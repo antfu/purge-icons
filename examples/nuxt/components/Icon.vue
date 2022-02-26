@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// @ts-ignore
+// @ts-expect-error types
 import Iconify from '@purge-icons/generated'
 
 export default Vue.extend({

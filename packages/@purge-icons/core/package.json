@@ -28,25 +28,25 @@
     "access": "public"
   },
   "dependencies": {
-    "@iconify/iconify": "2.0.0-rc.6",
-    "axios": "^0.21.1",
-    "debug": "^4.3.2",
-    "fast-glob": "^3.2.5",
-    "fs-extra": "^9.1.0"
+    "@iconify/iconify": "2.1.2",
+    "axios": "^0.26.0",
+    "debug": "^4.3.3",
+    "fast-glob": "^3.2.11",
+    "fs-extra": "^10.0.1"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.7",
-    "@iconify/types": "^1.0.6",
-    "@types/debug": "^4.1.5",
-    "@types/fs-extra": "^9.0.7",
-    "@types/yargs": "^16.0.0",
-    "ava": "^3.15.0",
+    "@iconify/types": "^1.0.12",
+    "@types/debug": "^4.1.7",
+    "@types/fs-extra": "^9.0.13",
+    "@types/yargs": "^17.0.8",
+    "ava": "^4.0.1",
     "cross-env": "^7.0.3",
-    "esbuild-register": "^2.0.0",
+    "esbuild-register": "^3.3.2",
     "esm": "^3.2.25",
-    "esno": "^0.4.4",
-    "tsup": "^4.5.1",
-    "typescript": "^4.2.2"
+    "esno": "^0.14.1",
+    "tsup": "^5.11.13",
+    "typescript": "^4.5.5"
   },
   "ava": {
     "extensions": [

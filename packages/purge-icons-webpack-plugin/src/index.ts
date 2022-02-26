@@ -1,6 +1,6 @@
 import type { Compiler } from 'webpack'
-import { PurgeIcons as Purge, PurgeIconsOptions } from '@purge-icons/core'
-// @ts-ignore
+import type { PurgeIconsOptions } from '@purge-icons/core'
+import { PurgeIcons as Purge } from '@purge-icons/core'
 import VirtualModulesPlugin from 'webpack-virtual-modules'
 
 const modulePath = 'node_modules/@purge-icons/generated'
