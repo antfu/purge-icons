@@ -1,3 +1,8 @@
+It's now recommended to use [UnoCSS Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons), [unplugin-icons](https://github.com/antfu/unplugin-icons) or [Iconify Icon Components](https://docs.iconify.design/icon-components/components/) instead of this approach.
+
+----
+
+
 <h1 align='center'><samp>PurgeIcons</samp></h1>
 
 <p align='center'>Bundles only the icons you use</p>
