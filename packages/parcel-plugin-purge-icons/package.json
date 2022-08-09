@@ -1,6 +1,6 @@
 {
   "name": "parcel-plugin-purge-icons",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "Parcel plugin for PurgeIcons",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -28,8 +28,8 @@
     "build": "tsup src/index.ts --format cjs,esm --dts"
   },
   "dependencies": {
-    "@purge-icons/core": "^0.8.0",
-    "@purge-icons/generated": "^0.8.1"
+    "@purge-icons/core": "^0.9.0",
+    "@purge-icons/generated": "^0.9.0"
   },
   "devDependencies": {
     "tsup": "^4.5.1",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/antfu/purge-icons/compare/v0.8.2...v0.9.0) (2022-08-09)
+
+
+### Features
+
+* support loading from `@iconify-json/*` ([#34](https://github.com/antfu/purge-icons/issues/34)) ([61063c5](https://github.com/antfu/purge-icons/commit/61063c55a13fe1beef8c22fcbf21586e038fde2c))
+
+
+
+
+
 ## [0.8.1](https://github.com/antfu/purge-icons/compare/v0.8.0...v0.8.1) (2022-02-28)
 
 
