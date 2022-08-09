@@ -18,6 +18,17 @@ export async function fetchCollection(
 
   if (source === 'local' || source === 'auto') {
     try {
+      const { icons: collection } = await import (`@iconify-json/${name}`)
+      cache[name] = collection
+      // If an error is reported, it will not be printed here
+      debug(`fetching collection "${name}" from local packages`)
+      return collection
+    }
+    catch (e) {
+      // try to import from `@iconify/json` so do nothing here
+    }
+
+    try {
       debug(`fetching collection "${name}" from local packages`)
       const collection = await import(`@iconify/json/json/${name}.json`)
       cache[name] = collection
