@@ -19,6 +19,8 @@ export async function fetchCollection(
   if (source === 'local' || source === 'auto') {
     try {
       const { icons: collection } = await import (`@iconify-json/${name}`)
+      resolveAliases(collection)
+
       cache[name] = collection
       // If an error is reported, it will not be printed here
       debug(`fetching collection "${name}" from local packages`)
@@ -31,6 +33,8 @@ export async function fetchCollection(
     try {
       debug(`fetching collection "${name}" from local packages`)
       const collection = await import(`@iconify/json/json/${name}.json`)
+      resolveAliases(collection)
+
       cache[name] = collection
       return collection
     }
@@ -47,6 +51,8 @@ export async function fetchCollection(
       debug(`loading collection "${name}" from remote ${url}`)
       const { data } = await axios.get(url)
       const collection = typeof data === 'string' ? JSON.parse(data) : data
+      resolveAliases(collection)
+
       cache[name] = collection
       return collection
     }
@@ -57,4 +63,20 @@ export async function fetchCollection(
   }
 
   throw new Error(`Unabled to fetch collection "${name}"`)
+}
+
+
+function resolveAliases(collection: IconifyJSON) {
+  Object.entries(collection.aliases || {}).forEach(([name, data]) => {
+    const { parent: parentIcon, ...other } = data
+
+    const parentIconData = collection.icons[parentIcon]
+
+
+    collection.icons[name] = {
+      ...parentIconData,
+      ...other
+    }
+  })
+
 }
