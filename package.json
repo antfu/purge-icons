@@ -21,6 +21,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.1",
+    "@types/node": "^18.7.18",
+    "@types/yargs": "^17.0.8",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "eslint": "^8.10.0",
     "lerna": "^3.22.1"

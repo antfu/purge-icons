@@ -5,11 +5,15 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': ^0.16.1
+      '@types/node': ^18.7.18
+      '@types/yargs': ^17.0.8
       '@typescript-eslint/eslint-plugin': ^5.12.1
       eslint: ^8.10.0
       lerna: ^3.22.1
     devDependencies:
       '@antfu/eslint-config': 0.16.1_eslint@8.10.0
+      '@types/node': 18.7.18
+      '@types/yargs': 17.0.8
       '@typescript-eslint/eslint-plugin': 5.12.1_eslint@8.10.0
       eslint: 8.10.0
       lerna: 3.22.1
@@ -2898,13 +2902,13 @@ packages:
   /@octokit/types/2.16.2:
     resolution: {integrity: sha512-O75k56TYvJ8WpAakWwYRN8Bgu60KrmX0z1KqFp1kNiFNkgW+JW+9EBKZ+S33PU6SLvbihqd+3drvPxKK68Ee8Q==}
     dependencies:
-      '@types/node': 14.0.27
+      '@types/node': 18.7.18
     dev: true
 
   /@octokit/types/5.4.0:
     resolution: {integrity: sha512-D/uotqF69M50OIlwMqgyIg9PuLT2daOiBAYF0P40I2ekFA2ESwwBY5dxZe/UhXdPvIbNKDzuZmQrO7rMpuFbcg==}
     dependencies:
-      '@types/node': 14.0.27
+      '@types/node': 18.7.18
     dev: true
 
   /@polka/url/1.0.0-next.11:
@@ -3050,7 +3054,7 @@ packages:
     resolution: {integrity: sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==}
     dependencies:
       '@types/minimatch': 3.0.3
-      '@types/node': 14.0.27
+      '@types/node': 18.7.18
     dev: true
 
   /@types/html-minifier-terser/5.1.0:
@@ -3098,6 +3102,10 @@ packages:
 
   /@types/node/14.0.27:
     resolution: {integrity: sha512-kVrqXhbclHNHGu9ztnAwSncIgJv/FaxmzXJvGXNdcCpV1b8u1/Mi6z6m0vwy0LzKeXFTPLH0NzwmoJ3fNCIq0g==}
+
+  /@types/node/18.7.18:
+    resolution: {integrity: sha512-m+6nTEOadJZuTPkKR/SYK3A2d7FZrgElol9UP1Kae90VVU4a6mxnPuLiIW1m4Cq4gZ/nWb9GrdVXJCoCazDAbg==}
+    dev: true
 
   /@types/normalize-package-data/2.4.0:
     resolution: {integrity: sha512-f5j5b/Gf71L+dbqxIpQ4Z2WlmI/mPJ0fOkGGmFgtb6sAu97EPczzbS3/tJKxmcYDj55OX6ssqwDAWOHIYDRDGA==}

@@ -59,6 +59,7 @@ yargs
         await fs.writeFile(filepath, code, 'utf-8')
       }
       else {
+        // eslint-disable-next-line no-console
         console.log(code)
       }
     },
