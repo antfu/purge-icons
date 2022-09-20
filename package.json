@@ -1,5 +1,6 @@
 {
   "name": "@purge-icons/monorepo",
+  "packageManager": "pnpm@7.12.0",
   "private": true,
   "author": "antfu <anthonyfu117@hotmail.com>",
   "license": "MIT",
