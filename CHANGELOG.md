@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.2](https://github.com/antfu/purge-icons/compare/v0.9.1...v0.9.2) (2022-12-12)
+
+
+### Features
+
+* support vite 4 ([#38](https://github.com/antfu/purge-icons/issues/38)) ([e7f9c16](https://github.com/antfu/purge-icons/commit/e7f9c16b549389367a1ef043e0f528828138a864))
+
+
+
+
+
 ## [0.9.1](https://github.com/antfu/purge-icons/compare/v0.9.0...v0.9.1) (2022-09-20)
 
 
