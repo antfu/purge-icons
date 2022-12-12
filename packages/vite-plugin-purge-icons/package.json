@@ -32,7 +32,7 @@
     "rollup-plugin-purge-icons": "^0.9.1"
   },
   "peerDependencies": {
-    "vite": "^2.0.0-beta.3 || ^3.0.0"
+    "vite": "^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "esno": "^0.4.4",
