@@ -26,7 +26,7 @@ importers:
       '@nuxt/typescript-runtime': ^2.0.2
       '@nuxtjs/tailwindcss': ^3.4.2
       nuxt: ^2.15.2
-      nuxt-purge-icons-module: ^0.9.0
+      nuxt-purge-icons-module: ^0.9.1
       vue: '2'
     dependencies:
       '@iconify/iconify': 2.0.0-rc.6
@@ -45,7 +45,7 @@ importers:
       '@vitejs/plugin-vue': ^1.1.5
       '@vue/compiler-sfc': ^3.0.6
       vite: ^2.0.4
-      vite-plugin-purge-icons: ^0.9.0
+      vite-plugin-purge-icons: ^0.9.1
       vue: ^3.0.5
     dependencies:
       '@iconify/iconify': 1.0.7
@@ -103,7 +103,7 @@ importers:
 
   packages/gridsome-plugin-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       tsup: ^4.5.1
       typescript: ^4.5.5
@@ -116,7 +116,7 @@ importers:
 
   packages/next-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       tsup: ^4.5.1
       typescript: ^4.5.5
@@ -130,14 +130,14 @@ importers:
   packages/nuxt-purge-icons-module:
     specifiers:
       '@purge-icons/generated': ^0.9.0
-      purge-icons-webpack-plugin: ^0.9.0
+      purge-icons-webpack-plugin: ^0.9.1
     dependencies:
       '@purge-icons/generated': link:../@purge-icons/generated
       purge-icons-webpack-plugin: link:../purge-icons-webpack-plugin
 
   packages/parcel-plugin-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       tsup: ^4.5.1
       typescript: ^4.5.5
@@ -150,7 +150,7 @@ importers:
 
   packages/purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@types/fs-extra': ^9.0.7
       esno: ^0.4.4
       fs-extra: ^9.1.0
@@ -171,7 +171,7 @@ importers:
 
   packages/purge-icons-webpack-plugin:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       '@types/webpack': ^4.41.26
       tsup: ^4.5.1
@@ -188,7 +188,7 @@ importers:
 
   packages/rollup-plugin-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       rollup: ^2.40.0
       tsup: ^4.5.1
@@ -203,10 +203,10 @@ importers:
 
   packages/vite-plugin-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       esno: ^0.4.4
-      rollup-plugin-purge-icons: ^0.9.0
+      rollup-plugin-purge-icons: ^0.9.1
       tsup: ^4.5.1
       typescript: ^4.5.5
       vite: ^2.0.4
@@ -222,7 +222,7 @@ importers:
 
   packages/vue-cli-plugin-purge-icons:
     specifiers:
-      '@purge-icons/core': ^0.9.0
+      '@purge-icons/core': ^0.9.1
       '@purge-icons/generated': ^0.9.0
       tsup: ^4.5.1
       typescript: ^4.5.5
@@ -2660,7 +2660,7 @@ packages:
       vue-client-only: 2.0.0
       vue-meta: 2.4.0
       vue-no-ssr: 1.1.1
-      vue-router: 3.5.1
+      vue-router: 3.5.1_vue@2.6.12
       vue-template-compiler: 2.6.12
       vuex: 3.6.2_vue@2.6.12
     dev: false
@@ -11078,7 +11078,7 @@ packages:
     dev: true
 
   /path-is-absolute/1.0.1:
-    resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
+    resolution: {integrity: sha512-AVbw3UJ2e9bq64vSaS9Am0fje1Pa8pbGqTTsmXfaIiMpnr5DlDhfJOuLj9Sf95ZPVDAUerDfEk88MPmPe7UCQg==}
     engines: {node: '>=0.10.0'}
 
   /path-key/2.0.1:
@@ -14498,8 +14498,12 @@ packages:
     resolution: {integrity: sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==}
     dev: false
 
-  /vue-router/3.5.1:
+  /vue-router/3.5.1_vue@2.6.12:
     resolution: {integrity: sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==}
+    peerDependencies:
+      vue: ^2
+    dependencies:
+      vue: 2.6.12
     dev: false
 
   /vue-server-renderer/2.6.12:
