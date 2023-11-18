@@ -8,13 +8,15 @@ import { CollectionIds, ExtractorRegex } from './generated/collections'
 import { fetchCollection } from './loader'
 import type { Extractor, PurgeIconsOptions, RawContent } from './types'
 import { DELIMITER } from './constants'
-
+let includedCollections: string[] = [];
+let iconSource: string = 'auto';
 export async function PurgeIcons(options: PurgeIconsOptions = {}) {
+  includedCollections = options.includedCollections || [];
+  iconSource = options.iconSource || 'auto';
   const icons = await Extract(options)
   const code = await CodeGen([...icons, ...(options.included || [])], options)
   return code
 }
-
 export const DefaultExtractor: Extractor = {
   extensions: ['*'],
   extractor(str: string) {
@@ -32,11 +34,10 @@ export async function Extract(options: PurgeIconsOptions = {}) {
       '**/node_modules',
     ],
   })
-
   const files: RawContent[] = [
     ...rawContents,
     ...await Promise.all(
-      filenames.map(async(f) => {
+      filenames.map(async (f) => {
         debug(`extracting from ${f}`)
         return {
           extension: path.extname(f),
@@ -45,7 +46,6 @@ export async function Extract(options: PurgeIconsOptions = {}) {
       }),
     ),
   ]
-
   const extractors = [options.defaultExtractor || DefaultExtractor, ...(options.extractors || [])]
 
   const keys = new Set<string>()
@@ -62,16 +62,21 @@ export async function Extract(options: PurgeIconsOptions = {}) {
   return Array.from(keys)
 }
 
-export function VerifyCollection(name: string): name is CollectionId {
-  return CollectionIds.includes(name as CollectionId)
+export function VerifyCollection(name: string, collections: CollectionId[]): name is CollectionId {
+  return collections.includes(name as CollectionId)
 }
 
 export function ParseIconNames(icons: string[]) {
   const parsed: Partial<Record<CollectionId, string[]>> = {}
-
+  let collections: string[] = [];
+  if (iconSource === 'remote') {
+    collections = [...CollectionIds, ...includedCollections]
+  } else {
+    collections = CollectionIds
+  }
   for (const icon of icons) {
     const [collection, name] = icon.split(DELIMITER, 2)
-    if (!VerifyCollection(collection)) {
+    if (!VerifyCollection(collection, collections as CollectionId[])) {
       throw new Error(`Invalid collection name: "${collection}"`)
     }
     else {
@@ -90,7 +95,7 @@ export async function GetIconsData(icons: string[], options: PurgeIconsOptions =
     Object
       .entries(parsed)
       .map(
-        async([id, icons]) => {
+        async ([id, icons]) => {
           const collection = await fetchCollection(id as CollectionId, options.iconSource, options.remoteDataAPI)
           return {
             prefix: id,
