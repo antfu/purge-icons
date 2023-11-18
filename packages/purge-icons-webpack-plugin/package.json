@@ -33,11 +33,11 @@
   "dependencies": {
     "@purge-icons/core": "^0.9.1",
     "@purge-icons/generated": "^0.9.0",
-    "webpack-virtual-modules": "^0.4.2"
+    "webpack-virtual-modules": "^0.4.6"
   },
   "devDependencies": {
-    "@types/webpack": "^4.41.26",
-    "tsup": "^4.5.1",
-    "typescript": "^4.5.5"
+    "@types/webpack": "^4.41.36",
+    "tsup": "^4.14.0",
+    "typescript": "^4.9.5"
   }
 }

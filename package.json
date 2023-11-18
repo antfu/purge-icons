@@ -1,6 +1,6 @@
 {
   "name": "@purge-icons/monorepo",
-  "packageManager": "pnpm@7.12.0",
+  "packageManager": "pnpm@8.10.5",
   "private": true,
   "author": "antfu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -21,10 +21,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.16.1",
-    "@types/node": "^18.7.18",
-    "@types/yargs": "^17.0.8",
-    "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "eslint": "^8.10.0",
+    "@types/node": "^20.9.1",
+    "@types/yargs": "^17.0.31",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "eslint": "^8.54.0",
     "lerna": "^3.22.1"
   }
 }

@@ -29,24 +29,24 @@
   },
   "dependencies": {
     "@iconify/iconify": "2.1.2",
-    "axios": "^0.26.0",
-    "debug": "^4.3.3",
-    "fast-glob": "^3.2.11",
-    "fs-extra": "^10.0.1"
+    "axios": "^0.26.1",
+    "debug": "^4.3.4",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^10.1.0"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.7",
-    "@iconify/types": "^1.0.12",
-    "@types/debug": "^4.1.7",
+    "@iconify/json": "^2.2.143",
+    "@iconify/types": "^1.1.0",
+    "@types/debug": "^4.1.12",
     "@types/fs-extra": "^9.0.13",
-    "@types/yargs": "^17.0.8",
-    "ava": "^4.0.1",
+    "@types/yargs": "^17.0.31",
+    "ava": "^4.3.3",
     "cross-env": "^7.0.3",
-    "esbuild-register": "^3.3.2",
+    "esbuild-register": "^3.5.0",
     "esm": "^3.2.25",
     "esno": "^0.14.1",
-    "tsup": "^5.11.13",
-    "typescript": "^4.5.5"
+    "tsup": "^5.12.9",
+    "typescript": "^4.9.5"
   },
   "ava": {
     "extensions": [
